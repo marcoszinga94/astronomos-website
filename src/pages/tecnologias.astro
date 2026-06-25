@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SectionHeader from "../components/SectionHeader";
+import Section from "../components/ui/Section.astro";
+import TechCard from "../components/ui/TechCard.astro";
+import { technologies } from "../data/content";
+---
+
+<BaseLayout title="Tecnologías — Stack profesional">
+  <Section bg="bg-bg2">
+    <SectionHeader eyebrow="Stack tecnológico" title="Herramientas" highlight="profesionales" subtitle="Las mismas tecnologías que usa la industria del software, aplicadas a proyectos educativos con impacto real en la comunidad." />
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+      {technologies.map((tech) => (
+        <TechCard key={tech.name} logo={tech.logo} logoBg={tech.logoBg} role={tech.role} name={tech.name} desc={tech.desc} bridgeLabel={tech.bridgeLabel} bridgeText={tech.bridgeText} />
+      ))}
+    </div>
+  </Section>
+</BaseLayout>

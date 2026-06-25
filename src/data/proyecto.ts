@@ -1,0 +1,147 @@
+export interface Estacion {
+  num: string;
+  icono: string;
+  titulo: string;
+  texto: string;
+  featured?: boolean;
+  badge?: string;
+}
+
+export const estaciones: Estacion[] = [
+  {
+    num: "01",
+    icono: "⭐",
+    titulo: "Estrellas y Planetas",
+    texto: "Los niños descubren la diferencia entre estrellas y planetas, aprenden los nombres de los planetas del sistema solar y exploran maquetas e imágenes del universo.",
+  },
+  {
+    num: "02",
+    icono: "🌅",
+    titulo: "Día, Noche y Estaciones del Año",
+    texto: "Experimentos prácticos para entender la rotación y traslación de la Tierra. Los niños comprenden por qué existe el día y la noche y por qué cambian las estaciones.",
+  },
+  {
+    num: "03",
+    icono: "🔭",
+    titulo: "Instrumentos de Observación",
+    texto: "Telescopios, binoculares y materiales didácticos. Los niños aprenden cómo los astrónomos observan el cielo y tienen su primer contacto con los instrumentos de observación astronómica.",
+  },
+  {
+    num: "04",
+    icono: "🌙",
+    titulo: "La Luna, Fases y Eclipses",
+    texto: "Modelos físicos de las fases lunares y simulaciones de eclipses. Los niños comprenden el movimiento de la Luna, por qué cambia su forma visible y qué es un eclipse solar y lunar.",
+  },
+  {
+    num: "05",
+    icono: "🎮",
+    titulo: "Videojuegos y Recursos Digitales",
+    texto: "La estación final: 8 videojuegos educativos programados por estudiantes de Desarrollo de Software. La tecnología y la astronomía se unen en una experiencia única e interactiva.",
+    featured: true,
+    badge: "8 juegos desarrollados por estudiantes ↓",
+  },
+];
+
+export const cronologia = [
+  {
+    num: "01",
+    emoji: "💡",
+    phase: "Etapa 1",
+    title: "Idea inicial",
+    text: "La propuesta surge de la cátedra de Práctica Profesionalizante I: crear videojuegos educativos sobre astronomía para niños de primer grado, articulando contenidos de Programación II.",
+    tags: ["PP1", "Programación II"],
+  },
+  {
+    num: "02",
+    emoji: "🔍",
+    phase: "Etapa 2",
+    title: "Investigación",
+    text: "Cada estudiante investiga su temática: astronomía infantil, mecánicas de videojuegos educativos, referencias visuales y pedagógicas apropiadas para la edad objetivo.",
+    tags: ["UX Research", "Pedagogía"],
+  },
+  {
+    num: "03",
+    emoji: "🎨",
+    phase: "Etapa 3",
+    title: "Diseño",
+    text: "Wireframes, mockups y definición de mecánicas. Cada juego tiene una identidad visual única pero cohesiva, pensada para el usuario de 6 años.",
+    tags: ["UI Design", "Mecánicas"],
+  },
+  {
+    num: "04",
+    emoji: "⌨️",
+    phase: "Etapa 4",
+    title: "Desarrollo",
+    text: "Codificación, iteraciones, commits y resolución de problemas técnicos. La etapa más extensa: cada juego representa semanas de trabajo individual con Python y Pygame.",
+    tags: ["Python", "Pygame", "Git"],
+  },
+  {
+    num: "05",
+    emoji: "🧪",
+    phase: "Etapa 5",
+    title: "Pruebas",
+    text: "Testing funcional, pruebas con usuarios reales y corrección de bugs. Se valida que el juego sea intuitivo, seguro y disfrutable para niños sin experiencia previa.",
+    tags: ["QA", "Testing de usuario"],
+  },
+  {
+    num: "06",
+    emoji: "🚀",
+    phase: "Etapa 6",
+    title: "Implementación",
+    text: "Preparación del ejecutable final, documentación técnica y configuración del entorno de la Expo. El producto está listo para ser usado por los niños.",
+    tags: ["Deploy", "Documentación"],
+  },
+  {
+    num: "07",
+    emoji: "🏆",
+    phase: "Etapa 7 · Hoy",
+    title: "Expo Carrera 2026",
+    text: "Presentación ante la comunidad: niños, docentes, autoridades y familias descubren los videojuegos. Los estudiantes muestran el resultado de meses de trabajo profesional.",
+    tags: ["Expo 2026", "Comunidad educativa"],
+  },
+];
+
+export const timeline = [
+  {
+    emoji: "📋",
+    step: "Fase 1 · Análisis de requerimientos",
+    title: "Investigación del usuario final",
+    text: "¿Qué necesitan los niños de primer grado? ¿Cómo aprenden mejor? Los estudiantes investigan, entrevistan docentes y definen los requisitos pedagógicos y técnicos del software antes de escribir una línea de código.",
+    chips: ["Entrevistas a docentes", "Análisis de requisitos", "Benchmarking pedagógico"],
+  },
+  {
+    emoji: "🎨",
+    step: "Fase 2 · Diseño",
+    title: "Diseño de mecánicas e interfaces",
+    text: "Bocetos de pantallas, definición de mecánicas de juego, paleta de colores adaptada a niños de 6 años. Wireframes y prototipos validados con usuarios antes de programar, siguiendo un proceso UX real.",
+    chips: ["UX para niños", "Wireframes", "Prototipado"],
+  },
+  {
+    emoji: "💻",
+    step: "Fase 3 · Desarrollo",
+    title: "Programación del videojuego",
+    text: "Codificación con Python y Pygame. Cada estudiante toma decisiones arquitectónicas reales: estructuración del código, gestión del estado del juego, manejo de audio, sprites y optimización de rendimiento.",
+    chips: ["Python", "Pygame", "GitHub", "Control de versiones"],
+  },
+  {
+    emoji: "🧪",
+    step: "Fase 4 · Testing",
+    title: "Pruebas y corrección de errores",
+    text: "Pruebas de usuario, corrección de bugs y mejoras de UX. Los estudiantes aprenden que el código que funciona no siempre es suficiente: también debe ser usable, accesible y seguro para niños de 6 años.",
+    chips: ["Testing de usuario", "QA", "Depuración", "Accesibilidad"],
+  },
+  {
+    emoji: "🎮",
+    step: "Fase 5 · Producto Final",
+    title: "Implementación en la Expo Carrera",
+    text: "El videojuego terminado se integra a la Estación 5. Los estudiantes configuran el entorno, preparan la presentación y defienden sus decisiones técnicas ante docentes, autoridades y la comunidad educativa.",
+    chips: ["Expo Carrera 2026", "Comunicación técnica", "Presentación profesional"],
+  },
+  {
+    emoji: "👦",
+    step: "Fase 6 · Experiencia Educativa",
+    title: "Uso por niños de primer grado",
+    text: "El momento que da sentido a todo el proceso: niños de 6 y 7 años juegan los videojuegos diseñados para ellos, aprenden astronomía y se divierten. Los estudiantes ven el impacto real de lo que programaron.",
+    chips: ["Impacto educativo real", "Primer grado", "Aprendizaje lúdico"],
+  },
+];

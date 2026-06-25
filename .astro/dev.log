@@ -1,0 +1,76 @@
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"Generated 2ms","label":"types","level":"info"}
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"Re-optimizing dependencies because vite config has changed","label":"vite","level":"info"}
+{"message":" astro  v7.0.2 ready in 2553 ms\n┃ Local    http://localhost:4321/\n┃ Network  http://192.168.56.1:4321/\n           http://10.0.3.11:4321/","label":"SKIP_FORMAT","level":"info"}
+{"message":"watching for file changes...","label":null,"level":"info"}
+{"message":"Configuration file updated. Restarting...","label":null,"level":"info"}
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"Re-optimizing dependencies because vite config has changed","label":"vite","level":"info"}
+{"message":"server restarted.","label":"vite","level":"info"}
+{"message":"[200] /impacto 81ms","label":null,"level":"info"}
+{"message":"[200] /impacto 12ms","label":null,"level":"info"}
+{"message":"[200] / 39ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 81ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 122ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"An error happened during full reload\nFailed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\nError: Failed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\n    at loadAndTransform (file:///C:/Users/Marcos/Downloads/Astronomos-paginaweb/astronomos-website/node_modules/vite/dist/node/chunks/node.js:19714:31)","label":"vite","level":"error"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] / 152ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] /institucion 30ms","label":null,"level":"info"}
+{"message":"[200] /carrera 36ms","label":null,"level":"info"}
+{"message":"[200] /proyecto 30ms","label":null,"level":"info"}
+{"message":"[200] /juegos 85ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /juegos 149ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /juegos 54ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /juegos 41ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /juegos 44ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /juegos 62ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /juegos 75ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /juegos 83ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /juegos 60ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /juegos 184ms","label":null,"level":"info"}
+{"message":"[200] /juegos 186ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /juegos 87ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /juegos 134ms","label":null,"level":"info"}
+{"message":"[200] /juegos 136ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"[200] /juegos 33ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /juegos 84ms","label":null,"level":"info"}
+{"message":"[200] / 50ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] /institucion 28ms","label":null,"level":"info"}
+{"message":"[200] /carrera 25ms","label":null,"level":"info"}
+{"message":"[200] /proyecto 21ms","label":null,"level":"info"}
+{"message":"[200] /juegos 18ms","label":null,"level":"info"}
+{"message":"[200] /equipo 67ms","label":null,"level":"info"}
+{"message":"[200] /juegos 18ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /juegos 43ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /juegos 46ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /juegos 52ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] /juegos 85ms","label":null,"level":"info"}
+{"message":"[200] /juegos 17ms","label":null,"level":"info"}

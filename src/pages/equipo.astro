@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SectionHeader from "../components/SectionHeader";
+import Section from "../components/ui/Section.astro";
+import TeamCard from "../components/TeamCard";
+import { games } from "../data/games";
+---
+
+<BaseLayout title="Estudiantes — Los desarrolladores">
+  <Section>
+    <SectionHeader
+      eyebrow="Los desarrolladores"
+      title="Los"
+      highlight="estudiantes"
+      subtitle="Ocho estudiantes de la Tecnicatura en Programación Full Stack. Cada uno diseñó, programó y presentó su videojuego educativo de forma independiente."
+    />
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      {
+        games.map((game, i) => (
+          <TeamCard key={game.slug} game={game} index={i} />
+        ))
+      }
+    </div>
+  </Section>
+</BaseLayout>

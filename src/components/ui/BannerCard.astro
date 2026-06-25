@@ -1,0 +1,13 @@
+---
+export interface Props {
+  bg?: string;
+  border?: string;
+}
+
+const { bg = "bg-gradient-to-br from-a1/7 to-a2/5", border = "border-a1/20" } = Astro.props;
+---
+
+<div class={`${bg} ${border} rounded-[20px] p-9 relative overflow-hidden`}>
+  <div class="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-a1 via-a2 to-a3" />
+  <slot />
+</div>

@@ -1,0 +1,18 @@
+---
+export interface Props {
+  label: string;
+  percent: number;
+}
+
+const { label, percent } = Astro.props;
+---
+
+<div>
+  <div class="flex justify-between text-[10px] text-t3 font-mono mb-1">
+    <span>{label}</span>
+    <span>{percent}%</span>
+  </div>
+  <div class="h-1 bg-bg4 rounded-full overflow-hidden">
+    <div class="h-full rounded-full bg-gradient-to-r from-a1 to-a2" style={`width:${percent}%`}></div>
+  </div>
+</div>

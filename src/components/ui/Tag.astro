@@ -1,0 +1,27 @@
+---
+export interface Props {
+  variant?: "a1" | "green" | "orange" | "default" | "outline" | "pill-a1" | "pill-green";
+  dot?: boolean;
+  dotColor?: string;
+}
+
+const { variant = "default", dot = false, dotColor = "bg-a1" } = Astro.props;
+
+const variants: Record<string, string> = {
+  a1: "bg-a1/10 border border-a1/20 text-a1/90 tracking-wider uppercase",
+  green: "bg-green/8 border border-green/20 text-green/90 tracking-wider uppercase",
+  orange: "bg-orange/8 border border-orange/20 text-orange/90 tracking-wider uppercase",
+  default: "bg-bg4 border border-white/5 text-t3",
+  outline: "bg-bg3 border border-white/5 text-t3",
+  "pill-a1": "bg-a1/7 border border-a1/20 text-a1/90 tracking-wider uppercase",
+  "pill-green": "bg-green/7 border border-green/20 text-green/90 tracking-wider uppercase",
+};
+
+const isPill = variant.startsWith("pill-");
+const cls = `font-mono text-[9px] font-medium inline-flex items-center gap-1.5 ${isPill ? "px-3 py-1.5 rounded-full" : "px-[9px] py-[3px] rounded"} border ${variants[variant]}`;
+---
+
+<span class={cls}>
+  {dot && <span class={`w-[5px] h-[5px] rounded-full ${dotColor} shrink-0`} />}
+  <slot />
+</span>
