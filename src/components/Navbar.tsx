@@ -19,7 +19,7 @@ export default function Navbar() {
         <a href="/" className="flex items-center gap-2.5 shrink-0">
           <span className="w-2 h-2 rounded-full bg-a1 shadow-[0_0_10px_#4f7fff] animate-[pulse-dot_2.5s_ease-in-out_infinite]" />
           <span className="text-[15px] font-semibold whitespace-nowrap">
-            Desarrollo de Software
+            El Nacional
           </span>
         </a>
 

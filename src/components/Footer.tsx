@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="flex items-center justify-between flex-wrap gap-5">
           <div className="flex flex-col gap-1">
             <div className="text-[15px] font-semibold text-t1">
-              Astrónomos por un día · Expo Carrera 2026
+              El Nacional · Expo Carrera 2026
             </div>
             <div className="text-[13px] text-t2">
               Esc. Educ. Superior El Nacional · UPC · La Carlota, Córdoba · Argentina
