@@ -42,8 +42,8 @@ import { estaciones, timeline } from "../data/proyecto";
           >no fueron espectadores sino protagonistas</strong
         >: observaron el cielo, manipularon instrumentos, conectaron estrellas,
         descubrieron las fases de la luna y, en la estación final, jugaron
-        videojuegos educativos programados especialmente para ellos por
-        estudiantes de la carrera de Desarrollo de Software.
+        <a href="/juegos" class="text-a1 hover:text-white underline underline-offset-2 transition-colors">videojuegos educativos</a> programados especialmente para ellos por
+        <a href="/equipo" class="text-a1 hover:text-white underline underline-offset-2 transition-colors">estudiantes</a> de la carrera de Desarrollo de Software.
       </p>
     </BannerCard>
 
@@ -99,7 +99,7 @@ import { estaciones, timeline } from "../data/proyecto";
                     {est.titulo}
                   </h3>
                   <p class="text-[14px] text-t2 leading-relaxed">{est.texto}</p>
-                  {est.badge && <Tag variant="a1">{est.badge}</Tag>}
+                  {est.badge && <a href="/juegos" class="inline-block"><Tag variant="a1">{est.badge}</Tag></a>}
                 </div>
               </div>
             ))
