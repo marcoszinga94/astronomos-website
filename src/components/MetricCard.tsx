@@ -13,7 +13,7 @@ export default function MetricCard({ metric, delay = "" }: Props) {
       <div className="font-mono text-[clamp(28px,3.5vw,44px)] font-medium text-t1 leading-none flex items-baseline gap-0.5">
         <CountUp target={parseInt(metric.value)} suffix={metric.suffix || ""} />
       </div>
-      <div className="text-[11px] text-t2 tracking-wider uppercase leading-tight text-center whitespace-pre-line">
+      <div className="text-[13px] text-t2 tracking-wider uppercase leading-tight text-center whitespace-pre-line">
         {metric.label}
       </div>
     </div>

@@ -28,19 +28,19 @@ export default function TeamCard({ game, index }: Props) {
         <div className="text-[15px] font-bold text-t1 mb-0.5">
           {game.dev}
         </div>
-        <div className="text-[11px] text-t1 font-medium mb-1 truncate">
+        <div className="text-[13px] text-t1 font-medium mb-1 truncate">
           {game.emoji} {game.title}
         </div>
-        <span className="inline-flex font-mono text-[9px] tracking-wider uppercase text-t2 px-2 py-0.5 rounded bg-bg5 border border-white/10">
+        <span className="inline-flex font-mono text-[11px] tracking-wider uppercase text-t2 px-2 py-0.5 rounded bg-bg5 border border-white/10">
           Desarrollador · {game.category}
         </span>
       </div>
       <div className="p-5 flex flex-col gap-3 flex-1">
-        <p className="text-[13px] text-t2 leading-relaxed">
+        <p className="text-[15px] text-t2 leading-relaxed">
           {game.description}
         </p>
         {game.highlight && (
-          <div className="py-2.5 px-3 bg-a1/10 border-l-2 border-a1 rounded-r-md text-[11px] text-t1 italic leading-relaxed">
+          <div className="py-2.5 px-3 bg-a1/10 border-l-2 border-a1 rounded-r-md text-[13px] text-t1 italic leading-relaxed">
             &ldquo;{game.highlight}&rdquo;
           </div>
         )}
@@ -48,7 +48,7 @@ export default function TeamCard({ game, index }: Props) {
           {game.tags.concat(`Niveles`).map((t) => (
             <span
               key={t}
-              className="font-mono text-[9px] px-[9px] py-[3px] rounded bg-bg4 border border-white/10 text-t2"
+              className="font-mono text-[11px] px-[9px] py-[3px] rounded bg-bg4 border border-white/10 text-t2"
             >
               {t}
             </span>

@@ -18,7 +18,7 @@ export default function Navbar() {
       <div className="max-w-[1120px] mx-auto px-10 max-md:px-5 h-full flex items-center justify-between gap-6">
         <a href="/" className="flex items-center gap-2.5 shrink-0">
           <span className="w-2 h-2 rounded-full bg-a1 shadow-[0_0_10px_#4f7fff] animate-[pulse-dot_2.5s_ease-in-out_infinite]" />
-          <span className="text-[13px] font-semibold whitespace-nowrap">
+          <span className="text-[15px] font-semibold whitespace-nowrap">
             Desarrollo de Software
           </span>
         </a>
@@ -47,7 +47,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-[12px] text-t2 max-lg:px-5 max-lg:py-3.5 px-3.5 py-1.5 rounded-lg transition-all duration-200 hover:text-t1 hover:bg-white/5 whitespace-nowrap"
+              className="text-[14px] text-t2 max-lg:px-5 max-lg:py-3.5 px-3.5 py-1.5 rounded-lg transition-all duration-200 hover:text-t1 hover:bg-white/5 whitespace-nowrap"
               onClick={() => setOpen(false)}
             >
               {l.label}
@@ -57,7 +57,7 @@ export default function Navbar() {
 
         <a
           href="/inscripcion"
-          className="text-[11px] font-semibold tracking-wider uppercase px-[22px] py-3 rounded-full bg-a1 text-white transition-all duration-200 hover:opacity-85 hover:-translate-y-0.5 shrink-0 max-lg:hidden"
+          className="text-[13px] font-semibold tracking-wider uppercase px-[22px] py-3 rounded-full bg-a1 text-white transition-all duration-200 hover:opacity-85 hover:-translate-y-0.5 shrink-0 max-lg:hidden"
         >
           Conocé la carrera →
         </a>

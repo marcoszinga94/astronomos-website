@@ -33,18 +33,18 @@ import { estaciones, timeline } from "../data/proyecto";
       </div>
 
       <div>
-        <div class="font-mono text-[9px] tracking-wider uppercase text-a1 mb-4">Las 5 estaciones temáticas</div>
+        <div class="font-mono text-[11px] tracking-wider uppercase text-a1 mb-4">Las 5 estaciones temáticas</div>
         <div class="flex flex-col gap-3.5">
           {estaciones.map((est) => (
             <div class={`bg-bg3 border border-white/5 rounded-xl p-5 grid grid-cols-[56px_1fr] gap-4 items-start transition-all hover:border-a1/20 hover:translate-x-1 ${est.featured ? 'border-a1/25 bg-a1/4' : ''}`}>
               <div class="flex flex-col items-center gap-1">
                 <span class="text-[26px] leading-none">{est.icono}</span>
-                <span class="font-mono text-[8px] tracking-wider text-t2">{est.num}</span>
+                <span class="font-mono text-[10px] tracking-wider text-t2">{est.num}</span>
               </div>
               <div>
-                <div class="font-mono text-[9px] tracking-wider uppercase text-t2 mb-0.5">Estación {est.num}</div>
+                <div class="font-mono text-[11px] tracking-wider uppercase text-t2 mb-0.5">Estación {est.num}</div>
                 <h3 class="text-[15px] font-semibold text-t1 mb-1">{est.titulo}</h3>
-                <p class="text-[12px] text-t2 leading-relaxed">{est.texto}</p>
+                <p class="text-[14px] text-t2 leading-relaxed">{est.texto}</p>
                 {est.badge && (
                   <Tag variant="a1">{est.badge}</Tag>
                 )}
@@ -71,9 +71,9 @@ import { estaciones, timeline } from "../data/proyecto";
             <span class="block leading-none">{item.emoji}</span>
           </div>
           <div class="bg-bg3 border border-white/5 rounded-xl p-6 transition-colors">
-            <div class="font-mono text-[9px] tracking-wider uppercase text-a1 mb-1.5">{item.step}</div>
+            <div class="font-mono text-[11px] tracking-wider uppercase text-a1 mb-1.5">{item.step}</div>
             <h3 class="text-[17px] font-semibold text-t1 mb-2">{item.title}</h3>
-            <p class="text-[13px] text-t2 leading-relaxed">{item.text}</p>
+            <p class="text-[15px] text-t2 leading-relaxed">{item.text}</p>
             <div class="flex flex-wrap gap-1.5 mt-3">
               {item.chips.map((chip) => (
                 <Tag key={chip} variant="a1">{chip}</Tag>

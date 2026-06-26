@@ -14,7 +14,7 @@ export default function SectionHeader({
   const Heading = level;
   return (
     <div className="mb-14">
-      <div className="inline-flex items-center gap-2 font-mono text-[10px] tracking-widest uppercase text-a1/75 mb-3.5 before:content-[''] before:w-5 before:h-px before:bg-a1/50">
+      <div className="inline-flex items-center gap-2 font-mono text-[12px] tracking-widest uppercase text-a1/75 mb-3.5 before:content-[''] before:w-5 before:h-px before:bg-a1/50">
         {eyebrow}
       </div>
       <Heading className="text-[clamp(24px,3.5vw,40px)] font-bold tracking-tight leading-tight text-t1 mb-3.5">

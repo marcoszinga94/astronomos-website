@@ -23,8 +23,8 @@ export default function TestimonialCard({ testimonial, delay = "" }: Props) {
           {testimonial.emoji}
         </span>
         <div className="flex flex-col gap-0.5">
-          <div className="text-[13px] font-semibold text-t1">{testimonial.name}</div>
-          <div className="font-mono text-[10px] text-a1/75 tracking-wider">{testimonial.role}</div>
+          <div className="text-[15px] font-semibold text-t1">{testimonial.name}</div>
+          <div className="font-mono text-[12px] text-a1/75 tracking-wider">{testimonial.role}</div>
         </div>
       </div>
     </div>
