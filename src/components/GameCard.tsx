@@ -44,17 +44,17 @@ export default function GameCard({ game }: Props) {
           </span>
         </div>
         <h3 className="text-lg font-bold text-t1 tracking-tight leading-tight">{game.title}</h3>
-        <p className="text-[12px] text-t3 flex items-center gap-1.5">
+        <p className="text-[12px] text-t2 flex items-center gap-1.5">
           por <span className="text-a1/75 font-medium">{game.dev}</span>
         </p>
         <div className="text-[11px] text-t2 leading-relaxed py-2.5 px-3 bg-bg3 border-l-2 border-a1 rounded-r-md italic">
           {game.objective}
         </div>
-        <p className="text-[12px] text-t2 leading-relaxed font-light flex-1">{game.description}</p>
+        <p className="text-[12px] text-t2 leading-relaxed flex-1">{game.description}</p>
         <div className="mt-auto pt-3.5 border-t border-white/5 flex items-center justify-between gap-2.5 flex-wrap">
           <div className="flex gap-1.5 flex-wrap">
             {game.tags.map((t) => (
-              <span key={t} className="font-mono text-[9px] px-2 py-[3px] rounded bg-bg4 border border-white/5 text-t3">
+              <span key={t} className="font-mono text-[9px] px-2 py-[3px] rounded bg-bg4 border border-white/5 text-t2">
                 {t}
               </span>
             ))}
@@ -69,7 +69,7 @@ export default function GameCard({ game }: Props) {
               Demo ↗
             </a>
           ) : (
-            <span className="inline-flex items-center gap-1.5 text-[10px] font-semibold tracking-wider uppercase text-t3/50 border border-white/5 rounded-md px-3.5 py-[7px] whitespace-nowrap">
+            <span className="inline-flex items-center gap-1.5 text-[10px] font-semibold tracking-wider uppercase text-t2/80 border border-white/5 rounded-md px-3.5 py-[7px] whitespace-nowrap">
               Próximamente
             </span>
           )}
