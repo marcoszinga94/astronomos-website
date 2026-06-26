@@ -16,6 +16,8 @@ import { curriculum, careerCards, carreraStats, institucionStats } from "../data
   <Section>
     <SectionHeader as="h1" eyebrow="Tecnicatura Universitaria · UPC" title="La carrera de" highlight="Desarrollo de Software" subtitle="Formación universitaria presencial en La Carlota. Título oficial de la UPC, práctica profesional desde el primer año y salida laboral inmediata en el mercado tecnológico." />
 
+    <div class="h-8"></div>
+
     <BannerCard>
       <div class="grid lg:grid-cols-[1fr_auto] gap-10 items-center">
         <div>
@@ -43,7 +45,9 @@ import { curriculum, careerCards, carreraStats, institucionStats } from "../data
       </div>
     </BannerCard>
 
-    <div class="grid md:grid-cols-2 gap-4 mb-6">
+    <div class="h-16"></div>
+
+    <div class="grid md:grid-cols-2 gap-4">
       <div class="bg-bg2 border border-white/5 rounded-xl p-6 flex flex-col gap-3.5 transition-all hover:border-a1/25 hover:-translate-y-0.5">
         <div class="flex items-center gap-3">
           <span class="text-[28px]">🏫</span>
@@ -83,13 +87,17 @@ import { curriculum, careerCards, carreraStats, institucionStats } from "../data
       </div>
     </div>
 
-    <div class="bg-bg2 border border-a1/25 rounded-xl p-[18px_24px] flex items-center gap-4 mb-12">
+    <div class="h-12"></div>
+
+    <div class="bg-bg2 border border-a1/25 rounded-xl p-[18px_24px] flex items-center gap-4">
       <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-a1 to-a2 flex items-center justify-center font-extrabold text-[14px] text-white shrink-0">UPC</div>
       <div>
         <div class="text-[14px] font-semibold text-t1 mb-0.5">Universidad Provincial de Córdoba — UPC</div>
         <p class="text-[13px] text-t2 leading-relaxed">El Nacional forma parte de la red de instituciones asociadas a la UPC, garantizando títulos universitarios oficiales de nivel superior con reconocimiento nacional.</p>
       </div>
     </div>
+
+    <div class="h-16"></div>
 
     <BannerCard>
       <div class="grid lg:grid-cols-[1fr_auto] gap-8 items-center">
@@ -111,21 +119,29 @@ import { curriculum, careerCards, carreraStats, institucionStats } from "../data
       </div>
     </BannerCard>
 
+    <div class="h-16"></div>
+
     <SectionEyebrow text="Plan de estudios" />
-    <div class="grid lg:grid-cols-3 gap-3.5 mb-10">
+    <div class="h-6"></div>
+    <div class="grid lg:grid-cols-3 gap-3.5">
       {curriculum.map((year) => (
         <CurriculumYear key={year.year} year={year.year} title={year.title} subjects={year.subjects} />
       ))}
     </div>
 
+    <div class="h-16"></div>
+
     <SectionEyebrow text="Áreas de formación" />
+    <div class="h-6"></div>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
       {careerCards.map((card) => (
         <CareerCard key={card.title} icon={card.icon} title={card.title} desc={card.desc} tags={card.tags} color={card.color} />
       ))}
     </div>
 
-    <div class="flex justify-center mt-12">
+    <div class="h-12"></div>
+
+    <div class="flex justify-center">
       <Button href="/inscripcion">Inscribirme →</Button>
     </div>
   </Section>
