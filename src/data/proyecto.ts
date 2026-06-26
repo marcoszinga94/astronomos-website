@@ -1,3 +1,47 @@
+export interface Estacion {
+  num: string;
+  icono: string;
+  titulo: string;
+  texto: string;
+  featured?: boolean;
+  badge?: string;
+}
+
+export const estaciones: Estacion[] = [
+  {
+    num: "01",
+    icono: "⭐",
+    titulo: "Estrellas y Planetas",
+    texto: "Los niños descubren la diferencia entre estrellas y planetas, aprenden los nombres de los planetas del sistema solar y exploran maquetas e imágenes del universo.",
+  },
+  {
+    num: "02",
+    icono: "🌅",
+    titulo: "Día, Noche y Estaciones del Año",
+    texto: "Experimentos prácticos para entender la rotación y traslación de la Tierra. Los niños comprenden por qué existe el día y la noche y por qué cambian las estaciones.",
+  },
+  {
+    num: "03",
+    icono: "🔭",
+    titulo: "Instrumentos de Observación",
+    texto: "Telescopios, binoculares y materiales didácticos. Los niños aprenden cómo los astrónomos observan el cielo y tienen su primer contacto con los instrumentos de observación astronómica.",
+  },
+  {
+    num: "04",
+    icono: "🌙",
+    titulo: "La Luna, Fases y Eclipses",
+    texto: "Modelos físicos de las fases lunares y simulaciones de eclipses. Los niños comprenden el movimiento de la Luna, por qué cambia su forma visible y qué es un eclipse solar y lunar.",
+  },
+  {
+    num: "05",
+    icono: "🎮",
+    titulo: "Videojuegos y Recursos Digitales",
+    texto: "La estación final: 8 videojuegos educativos programados por estudiantes de Desarrollo de Software. La tecnología y la astronomía se unen en una experiencia única e interactiva.",
+    featured: true,
+    badge: "8 juegos desarrollados por estudiantes ↓",
+  },
+];
+
 export const cronologia = [
   {
     num: "01",
@@ -90,7 +134,7 @@ export const timeline = [
     emoji: "🎮",
     step: "Fase 5 · Producto Final",
     title: "Implementación en la Expo Carrera",
-    text: "Los estudiantes configuran el entorno, preparan la presentación y defienden sus decisiones técnicas ante docentes, autoridades y la comunidad educativa.",
+    text: "El videojuego terminado se integra a la Estación 5. Los estudiantes configuran el entorno, preparan la presentación y defienden sus decisiones técnicas ante docentes, autoridades y la comunidad educativa.",
     chips: ["Expo Carrera 2026", "Comunicación técnica", "Presentación profesional"],
   },
   {
