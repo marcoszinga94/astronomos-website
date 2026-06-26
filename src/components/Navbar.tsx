@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="max-w-[1120px] mx-auto px-10 max-md:px-5 h-full flex items-center justify-between gap-6">
         <a href="/" className="flex items-center gap-2.5 shrink-0">
           <span className="w-2 h-2 rounded-full bg-a1 shadow-[0_0_10px_#4f7fff] animate-[pulse-dot_2.5s_ease-in-out_infinite]" />
-          <span className="text-[13px] font-semibold whitespace-nowrap">Astrónomos por un día</span>
+          <span className="text-[13px] font-semibold whitespace-nowrap">Desarrollo de Software</span>
         </a>
 
         <button
