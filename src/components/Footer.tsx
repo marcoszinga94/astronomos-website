@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
         </div>
         <div class="text-[12px] text-t2 text-center mt-6">
-          Desarrollada por Marcos Zingaretti y Alejandro Appendino con ❤️
+          Desarrollada por <a href="https://marcoszinga.vercel.app" target="_blank" rel="noopener noreferrer" class="text-t2 hover:text-t1 transition-colors">Marcos Zingaretti</a> y Alejandro Appendino con ❤️
         </div>
       </div>
     </footer>
