@@ -17,6 +17,10 @@
   --color-t3: #4a5168;
   --font-sans: 'Sora', system-ui, sans-serif;
   --font-mono: 'DM Mono', monospace;
+  --text-2xs: 11px;
+  --text-13: 13px;
+  --text-15: 15px;
+  --radius-card: 20px;
 }
 
 @layer base {

@@ -43,7 +43,7 @@ import { estaciones, timeline } from "../data/proyecto";
         >: observaron el cielo, manipularon instrumentos, conectaron estrellas,
         descubrieron las fases de la luna y, en la estación final, jugaron
         <a href="/juegos" class="text-a1 hover:text-white underline underline-offset-2 transition-colors">videojuegos educativos</a> programados especialmente para ellos por
-        <a href="/equipo" class="text-a1 hover:text-white underline underline-offset-2 transition-colors">estudiantes</a> de la carrera de Desarrollo de Software.
+        <a href="/equipo" class="text-a1 hover:text-white underline underline-offset-2 transition-colors">estudiantes</a> de la Tecnicatura en Programación Full Stack.
       </p>
     </BannerCard>
 
@@ -74,10 +74,10 @@ import { estaciones, timeline } from "../data/proyecto";
       </div>
 
       <div>
-        <div
-          class="font-mono text-[11px] tracking-wider uppercase text-a1 mb-4"
-        >
-          Las 5 estaciones temáticas
+          <div
+            class="font-mono text-2xs tracking-wider uppercase text-a1 mb-4"
+          >
+            Las 5 estaciones temáticas
         </div>
         <div class="flex flex-col gap-3.5">
           {
@@ -86,19 +86,19 @@ import { estaciones, timeline } from "../data/proyecto";
                 class={`bg-bg3 border border-white/5 rounded-xl p-5 grid grid-cols-[56px_1fr] gap-4 items-start transition-all hover:border-a1/20 hover:translate-x-1 ${est.featured ? "border-a1/25 bg-a1/4" : ""}`}
               >
                 <div class="flex flex-col items-center gap-1">
-                  <span class="text-[26px] leading-none">{est.icono}</span>
+                  <span class="text-3xl leading-none">{est.icono}</span>
                   <span class="font-mono text-[10px] tracking-wider text-t2">
                     {est.num}
                   </span>
                 </div>
                 <div>
-                  <div class="font-mono text-[11px] tracking-wider uppercase text-t2 mb-0.5">
+                  <div class="font-mono text-2xs tracking-wider uppercase text-t2 mb-0.5">
                     Estación {est.num}
                   </div>
-                  <h3 class="text-[15px] font-semibold text-t1 mb-1">
+                  <h3 class="text-15 font-semibold text-t1 mb-1">
                     {est.titulo}
                   </h3>
-                  <p class="text-[14px] text-t2 leading-relaxed">{est.texto}</p>
+                  <p class="text-sm text-t2 leading-relaxed">{est.texto}</p>
                   {est.badge && <a href="/juegos" class="inline-block"><Tag variant="a1">{est.badge}</Tag></a>}
                 </div>
               </div>
@@ -123,8 +123,8 @@ import { estaciones, timeline } from "../data/proyecto";
         >trabajaron</span
       > los estudiantes?
     </h2>
-    <p
-      class="text-[clamp(14px,1.4vw,16px)] text-t2 font-light leading-relaxed max-w-[580px] mb-14"
+      <p
+        class="text-[clamp(14px,1.4vw,16px)] text-t2 leading-relaxed max-w-[580px] mb-14"
     >
       Cada videojuego siguió un proceso real de ingeniería de software — desde
       el análisis de requerimientos hasta el uso por niños de primer grado en la
@@ -136,17 +136,17 @@ import { estaciones, timeline } from "../data/proyecto";
       {
         timeline.map((item) => (
           <div class="grid grid-cols-[48px_1fr] gap-6 py-6 relative">
-            <div class="w-12 h-12 rounded-full bg-bg3 border-2 border-white/10 flex items-center justify-center text-[22px] shrink-0 relative z-1">
+            <div class="w-12 h-12 rounded-full bg-bg3 border-2 border-white/10 flex items-center justify-center text-2xl shrink-0 relative z-1">
               <span class="block leading-none">{item.emoji}</span>
             </div>
             <div class="bg-bg3 border border-white/5 rounded-xl p-6 transition-colors">
-              <div class="font-mono text-[11px] tracking-wider uppercase text-a1 mb-1.5">
+              <div class="font-mono text-2xs tracking-wider uppercase text-a1 mb-1.5">
                 {item.step}
               </div>
-              <h3 class="text-[17px] font-semibold text-t1 mb-2">
+              <h3 class="text-lg font-semibold text-t1 mb-2">
                 {item.title}
               </h3>
-              <p class="text-[15px] text-t2 leading-relaxed">{item.text}</p>
+              <p class="text-15 text-t2 leading-relaxed">{item.text}</p>
               <div class="flex flex-wrap gap-1.5 mt-3">
                 {item.chips.map((chip) => (
                   <Tag key={chip} variant="a1">

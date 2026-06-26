@@ -45,8 +45,8 @@ export interface CarreraStat {
 }
 
 export const carreraStats: CarreraStat[] = [
-  { number: "3", suffix: " años", suffixClass: "text-[14px] text-a1", label: "Duración" },
-  { number: "100", suffix: "%", suffixClass: "text-[14px] text-a1", label: "Presencial" },
+  { number: "3", suffix: " años", suffixClass: "text-sm text-a1", label: "Duración" },
+  { number: "100", suffix: "%", suffixClass: "text-sm text-a1", label: "Presencial" },
 ];
 
 export const curriculum = [

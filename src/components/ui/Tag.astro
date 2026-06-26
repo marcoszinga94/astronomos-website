@@ -18,10 +18,10 @@ const variants: Record<string, string> = {
 };
 
 const isPill = variant.startsWith("pill-");
-const cls = `font-mono text-[11px] font-medium inline-flex items-center gap-1.5 ${isPill ? "px-3 py-1.5 rounded-full" : "px-[9px] py-[3px] rounded"} border ${variants[variant]}`;
+const cls = `font-mono text-2xs font-medium inline-flex items-center gap-1.5 ${isPill ? "px-3 py-1.5 rounded-full" : "px-2 py-1 rounded"} border ${variants[variant]}`;
 ---
 
 <span class={cls}>
-  {dot && <span class={`w-[5px] h-[5px] rounded-full ${dotColor} shrink-0`} />}
+  {dot && <span class={`w-1.5 h-1.5 rounded-full ${dotColor} shrink-0`} />}
   <slot />
 </span>

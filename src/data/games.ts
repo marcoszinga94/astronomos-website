@@ -17,7 +17,15 @@ export interface Game {
   highlight?: string;
 }
 
-export const games: Game[] = [
+function sortGames(g: Game[]) {
+  return g.sort((a, b) => {
+    if (a.demoUrl && !b.demoUrl) return -1;
+    if (!a.demoUrl && b.demoUrl) return 1;
+    return a.title.localeCompare(b.title, "es");
+  });
+}
+
+export const games: Game[] = sortGames([
   {
     title: "Boom Cósmico",
     dev: "Benjamín Basiluk",
@@ -178,4 +186,4 @@ export const games: Game[] = [
     highlight:
       "Quería que el juego sintiera como un viaje de verdad. Que cada sector del universo fuera visualmente diferente y que el jugador tuviera razones para seguir explorando.",
   },
-];
+]);

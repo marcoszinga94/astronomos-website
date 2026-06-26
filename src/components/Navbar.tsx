@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const links = [
   { href: "/", label: "Inicio" },
-  { href: "/carrera", label: "La Carrera" },
+  { href: "/escuela", label: "Escuela" },
   { href: "/proyecto", label: "Proyecto" },
   { href: "/juegos", label: "Videojuegos" },
   { href: "/equipo", label: "Estudiantes" },
@@ -14,11 +14,11 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-bg/85 backdrop-blur-2xl border-b border-white/5 h-[60px]">
+    <nav className="sticky top-0 z-50 bg-bg/85 backdrop-blur-2xl border-b border-white/5 h-15">
       <div className="max-w-[1120px] mx-auto px-10 max-md:px-5 h-full flex items-center justify-between gap-6">
         <a href="/" className="flex items-center gap-2.5 shrink-0">
-          <span className="w-2 h-2 rounded-full bg-a1 shadow-[0_0_10px_#4f7fff] animate-[pulse-dot_2.5s_ease-in-out_infinite]" />
-          <span className="text-[15px] font-semibold whitespace-nowrap">
+          <span className="w-2 h-2 rounded-full bg-a1 shadow-[0_0_10px_var(--color-a1)] animate-[pulse-dot_2.5s_ease-in-out_infinite]" />
+          <span className="text-15 font-semibold whitespace-nowrap">
             El Nacional
           </span>
         </a>
@@ -41,13 +41,13 @@ export default function Navbar() {
         </button>
 
         <div
-          className={`max-lg:${open ? "flex" : "hidden"} max-lg:flex-col max-lg:absolute max-lg:top-[60px] max-lg:left-0 max-lg:right-0 max-lg:bg-bg2 max-lg:border-b max-lg:border-white/10 max-lg:p-3 max-lg:gap-0.5 flex items-center gap-1`}
+          className={`max-lg:${open ? "flex" : "hidden"} max-lg:flex-col max-lg:absolute max-lg:top-15 max-lg:left-0 max-lg:right-0 max-lg:bg-bg2 max-lg:border-b max-lg:border-white/10 max-lg:p-3 max-lg:gap-0.5 flex items-center gap-1`}
         >
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-[14px] text-t2 max-lg:px-5 max-lg:py-3.5 px-3.5 py-1.5 rounded-lg transition-all duration-200 hover:text-t1 hover:bg-white/5 whitespace-nowrap"
+              className="text-sm text-t2 max-lg:px-5 max-lg:py-3.5 px-3.5 py-1.5 rounded-lg transition-all duration-200 hover:text-t1 hover:bg-white/5 whitespace-nowrap"
               onClick={() => setOpen(false)}
             >
               {l.label}
@@ -57,9 +57,9 @@ export default function Navbar() {
 
         <a
           href="/inscripcion"
-          className="text-[13px] font-semibold tracking-wider uppercase px-[22px] py-3 rounded-full bg-a1 text-white transition-all duration-200 hover:opacity-85 hover:-translate-y-0.5 shrink-0 max-lg:hidden"
+          className="text-13 font-semibold tracking-wider uppercase px-6 py-3 rounded-full bg-a1 text-white transition-all duration-200 hover:opacity-85 hover:-translate-y-0.5 shrink-0 max-lg:hidden"
         >
-          Conocé la carrera →
+          Conocé la escuela →
         </a>
       </div>
     </nav>

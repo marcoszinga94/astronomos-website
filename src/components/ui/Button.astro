@@ -3,19 +3,21 @@ export interface Props {
   href: string;
   variant?: "primary" | "secondary" | "primary-gradient";
   fullWidth?: boolean;
+  target?: string;
+  rel?: string;
 }
 
-const { href, variant = "primary", fullWidth = false } = Astro.props;
+const { href, variant = "primary", fullWidth = false, target, rel } = Astro.props;
 
 const variants = {
-  primary: "bg-a1 text-white shadow-[0_4px_20px_rgba(79,127,255,0.35)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(79,127,255,0.5)]",
+  primary: "bg-a1 text-white shadow-[0_4px_20px_var(--color-a1)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_var(--color-a1)]",
   secondary: "bg-transparent text-t1 border border-white/10 font-medium hover:bg-white/5 hover:border-a1/25",
-  "primary-gradient": "bg-gradient-to-r from-a1 to-a2 text-white shadow-[0_4px_24px_rgba(79,127,255,0.35)] hover:-translate-y-0.5 hover:shadow-[0_8px_40px_rgba(79,127,255,0.5)]",
+  "primary-gradient": "bg-gradient-to-r from-a1 to-a2 text-white shadow-[0_4px_24px_var(--color-a1)] hover:-translate-y-0.5 hover:shadow-[0_8px_40px_var(--color-a1)]",
 };
 
-const cls = `${fullWidth ? "flex" : "inline-flex"} items-center justify-center gap-2 font-semibold tracking-wide transition-all duration-200 rounded-xl px-7 py-3.5 text-[14px] ${variants[variant]}`;
+const cls = `${fullWidth ? "flex" : "inline-flex"} items-center justify-center gap-2 font-semibold tracking-wide transition-all duration-200 rounded-xl px-7 py-3.5 text-sm ${variants[variant]}`;
 ---
 
-<a href={href} class={cls}>
+<a href={href} class={cls} {target} {rel}>
   <slot />
 </a>

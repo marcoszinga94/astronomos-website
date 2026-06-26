@@ -31,20 +31,20 @@ import { testimonials, competencias, salidasLaborales } from "../data/content";
       </div>
 
       <div class="flex flex-col gap-6">
-        <div class="bg-bg3 border border-white/5 rounded-[20px] p-8 relative">
+        <div class="bg-bg3 border border-white/5 rounded-card p-8 relative">
           <span class="text-[72px] leading-[0.8] text-a1/12 font-serif absolute top-4 left-5">&ldquo;</span>
           <p class="text-[clamp(16px,2vw,20px)] text-t1 font-light leading-relaxed italic relative pt-6">
             Los estudiantes no aprenden a programar para después trabajar. Trabajan desde el primer día para aprender a programar mejor.
           </p>
-          <div class="mt-4 font-mono text-[12px] text-t2 tracking-wider uppercase">
-            — Filosofía · <a href="/carrera" class="text-a1 hover:text-white underline underline-offset-2 transition-colors">Tecnicatura en Programación Full Stack</a> · El Nacional · UPC
+          <div class="mt-4 font-mono text-xs text-t2 tracking-wider uppercase">
+            — Filosofía · <a href="/escuela" class="text-a1 hover:text-white underline underline-offset-2 transition-colors">Tecnicatura en Programación Full Stack</a> · El Nacional · UPC
           </div>
         </div>
         <div class="bg-bg3 border border-white/5 rounded-xl p-6 flex flex-col gap-3">
-          <div class="font-mono text-[11px] tracking-wider uppercase text-a1">Salida laboral</div>
+          <div class="font-mono text-2xs tracking-wider uppercase text-a1">Salida laboral</div>
           <div class="flex flex-col gap-2">
             {salidasLaborales.map((s) => (
-              <div class="text-[15px] text-t2 flex gap-2 items-center"><span class="text-green">✓</span> {s}</div>
+              <div class="text-15 text-t2 flex gap-2 items-center"><span class="text-green">✓</span> {s}</div>
             ))}
           </div>
         </div>
