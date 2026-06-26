@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
         </div>
         <div class="text-[12px] text-t2 text-center mt-6">
-          Desarrollada por Marcos Zingaretti con ❤️
+          Desarrollada por Marcos Zingaretti y Alejandro Appendino con ❤️
         </div>
       </div>
     </footer>
