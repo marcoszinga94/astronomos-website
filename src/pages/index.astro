@@ -2,53 +2,114 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import SectionHeader from "../components/SectionHeader";
 import YouTubeEmbed from "../components/YouTubeEmbed";
+import { metrics, heroStats } from "../data/content";
 import { games } from "../data/games";
-import { metrics } from "../data/content";
+import MetricCard from "../components/MetricCard";
+import CountUp from "../components/CountUp";
+import Button from "../components/ui/Button.astro";
+import Section from "../components/ui/Section.astro";
 import Divider from "../components/ui/Divider.astro";
 import NavCard from "../components/ui/NavCard.astro";
 ---
 
-<BaseLayout title="Inicio" description="Desarrollo de Software aplicado a la Educación — Expo Carrera 2026 — El Nacional · UPC — La Carlota, Córdoba">
-  <section class="min-h-screen grid lg:grid-cols-2 gap-12 items-center pt-[calc(60px+60px)] pb-20 relative overflow-hidden [grid-template-areas:'hero-text''hero-visual'] lg:[grid-template-areas:'hero-text_hero-visual'] before:content-[''] before:absolute before:inset-0 before:bg-[linear-gradient(rgba(79,127,255,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(79,127,255,0.035)_1px,transparent_1px)] before:bg-[size:72px_72px] before:[mask-image:radial-gradient(ellipse_90%_90%_at_30%_50%,black_20%,transparent_100%)] before:pointer-events-none after:content-[''] after:absolute after:top-1/5 after:-left-1/10 after:w-1/2 after:h-3/5 after:bg-[radial-gradient(ellipse,rgba(79,127,255,0.08)_0%,transparent_70%)] after:pointer-events-none after:blur-40">
-    <div class="max-w-[1120px] mx-auto px-10 max-md:px-5 w-full" style="grid-area:hero-text">
+<BaseLayout
+  title="Inicio"
+  description="Desarrollo de Software aplicado a la Educación — Expo Carrera 2026 — El Nacional · UPC — La Carlota, Córdoba"
+>
+  <section
+    class="min-h-screen grid lg:grid-cols-2 gap-12 items-center pt-[calc(60px+60px)] pb-20 relative overflow-hidden [grid-template-areas:'hero-text''hero-visual'] lg:[grid-template-areas:'hero-text_hero-visual'] before:content-[''] before:absolute before:inset-0 before:bg-[linear-gradient(rgba(79,127,255,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(79,127,255,0.035)_1px,transparent_1px)] before:bg-[size:72px_72px] before:[mask-image:radial-gradient(ellipse_90%_90%_at_30%_50%,black_20%,transparent_100%)] before:pointer-events-none after:content-[''] after:absolute after:top-1/5 after:-left-1/10 after:w-1/2 after:h-3/5 after:bg-[radial-gradient(ellipse,rgba(79,127,255,0.08)_0%,transparent_70%)] after:pointer-events-none after:blur-40"
+  >
+    <div
+      class="max-w-[1120px] mx-auto px-10 max-md:px-5 w-full"
+      style="grid-area:hero-text"
+    >
       <div class="ml-0">
-        <div class="inline-flex items-center gap-2 font-mono text-[10px] tracking-widest uppercase text-a1 bg-a1/7 border border-a1/20 rounded-full px-4 py-1.5 self-start">
-          <span class="w-[5px] h-[5px] rounded-full bg-a1 animate-[pulse-dot_2s_ease-in-out_infinite]"></span>
+        <div
+          class="inline-flex items-center gap-2 font-mono text-[10px] tracking-widest uppercase text-a1 bg-a1/7 border border-a1/20 rounded-full px-4 py-1.5 self-start"
+        >
+          <span
+            class="w-[5px] h-[5px] rounded-full bg-a1 animate-[pulse-dot_2s_ease-in-out_infinite]"
+          ></span>
           Práctica Profesionalizante I · Programación II · 2026
         </div>
-        <h1 class="text-[clamp(32px,4.5vw,58px)] font-extrabold leading-[1.08] tracking-tight mt-6">
-          <span class="block text-white drop-shadow-[0_0_60px_rgba(79,127,255,0.2)]">Desarrollo de Software</span>
-          <span class="block bg-gradient-to-r from-a1 via-a2 to-a3 bg-clip-text text-transparent drop-shadow-[0_0_24px_rgba(79,127,255,0.35)]">que Inspira a Aprender</span>
+        <h1
+          class="text-[clamp(32px,4.5vw,58px)] font-extrabold leading-[1.08] tracking-tight mt-6"
+        >
+          <span
+            class="block text-white drop-shadow-[0_0_60px_rgba(79,127,255,0.2)]"
+            >Desarrollo de Software</span
+          >
+          <span
+            class="block bg-gradient-to-r from-a1 via-a2 to-a3 bg-clip-text text-transparent drop-shadow-[0_0_24px_rgba(79,127,255,0.35)]"
+            >que Inspira a Aprender</span
+          >
         </h1>
-        <p class="text-[clamp(14px,1.5vw,17px)] text-t2 font-light leading-relaxed max-w-[520px] mt-6">
-          Estudiantes de <strong class="text-t1 font-medium">Práctica Profesionalizante I y Programación II</strong> desarrollaron videojuegos educativos para enseñar astronomía a niños de primer grado. Un proyecto real, con impacto real en la comunidad de La Carlota, Córdoba.
+        <p
+          class="text-[clamp(14px,1.5vw,17px)] text-t2 font-light leading-relaxed max-w-130 mt-6"
+        >
+          Estudiantes de <strong class="text-t1 font-medium"
+            >Práctica Profesionalizante I y Programación II</strong
+          > desarrollaron videojuegos educativos para enseñar astronomía a niños de
+          primer grado. Un proyecto real, con impacto real en la comunidad de La Carlota,
+          Córdoba.
         </p>
         <div class="flex gap-3 flex-wrap mt-6">
           <Button href="/juegos" variant="primary">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5,3 19,12 5,21"/></svg>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"><polygon points="5,3 19,12 5,21"></polygon></svg
+            >
             Explorar proyectos
           </Button>
           <Button href="/inscripcion" variant="secondary">
             Conocer la carrera
           </Button>
         </div>
-        <div class="flex border border-white/5 rounded-xl overflow-hidden self-start mt-8 flex-wrap">
-          {heroStats.map((stat) => (
-            <div class="px-6 py-4 max-md:px-4 max-md:py-3 flex flex-col gap-0.5 border-r border-white/5 last:border-r-0">
-              <div class="font-mono text-2xl font-medium text-t1 leading-none"><CountUp target={stat.target} suffix={stat.suffix || ""} client:load /></div>
-              <div class="text-[10px] text-t3 tracking-wider uppercase">{stat.label}</div>
-            </div>
-          ))}
+        <div
+          class="flex border border-white/5 rounded-xl overflow-hidden self-start mt-8 flex-wrap"
+        >
+          {
+            heroStats.map((stat) => (
+              <div class="px-6 py-4 max-md:px-4 max-md:py-3 flex flex-col gap-0.5 border-r border-white/5 last:border-r-0">
+                <div class="font-mono text-2xl font-medium text-t1 leading-none">
+                  <CountUp
+                    target={stat.target}
+                    suffix={stat.suffix || ""}
+                    client:load
+                  />
+                </div>
+                <div class="text-[10px] text-t3 tracking-wider uppercase">
+                  {stat.label}
+                </div>
+              </div>
+            ))
+          }
         </div>
       </div>
     </div>
-    <div class="max-w-[1120px] mx-auto px-10 max-md:px-5 w-full" style="grid-area:hero-visual">
-      <div class="relative rounded-[20px] overflow-hidden border border-a1/20 shadow-[0_0_0_1px_rgba(79,127,255,0.06),0_32px_80px_rgba(0,0,0,0.7)]">
-        <div class="absolute -inset-5 bg-[radial-gradient(ellipse_at_50%_50%,rgba(79,127,255,0.15),transparent_70%)] -z-1 pointer-events-none blur-20"></div>
+    <div
+      class="max-w-280 mx-auto px-10 max-md:px-5 w-full"
+      style="grid-area:hero-visual"
+    >
+      <div
+        class="relative rounded-[20px] overflow-hidden border border-a1/20 shadow-[0_0_0_1px_rgba(79,127,255,0.06),0_32px_80px_rgba(0,0,0,0.7)]"
+      >
+        <div
+          class="absolute -inset-5 bg-[radial-gradient(ellipse_at_50%_50%,rgba(79,127,255,0.15),transparent_70%)] -z-1 pointer-events-none blur-20"
+        >
+        </div>
         <YouTubeEmbed videoId="aYXByxcr6zE" title="Astrónomos por un día — Video del proyecto" client:load />
       </div>
-      <div class="mt-3.5 flex items-center gap-2 font-mono text-[10px] text-t3 tracking-wider">
-        <span class="w-1.5 h-1.5 rounded-full bg-green shadow-[0_0_6px_#4fbb7c] animate-[pulse-dot_2s_ease-in-out_infinite]"></span>
+      <div
+        class="mt-3.5 flex items-center gap-2 font-mono text-[10px] text-t3 tracking-wider"
+      >
+        <span
+          class="w-1.5 h-1.5 rounded-full bg-green shadow-[0_0_6px_#4fbb7c] animate-[pulse-dot_2s_ease-in-out_infinite]"
+        ></span>
         Expo Carrera 2026 · El Nacional · UPC · La Carlota, Córdoba
       </div>
     </div>
@@ -57,50 +118,131 @@ import NavCard from "../components/ui/NavCard.astro";
   <Divider />
 
   <Section bg="bg-bg2">
-    <SectionHeader eyebrow="Navegación" title="Explorá el" highlight="proyecto completo" subtitle="Conocé cada aspecto de este proyecto educativo que articula programación, astronomía y trabajo en equipo." />
+    <SectionHeader
+      eyebrow="Navegación"
+      title="Explorá el"
+      highlight="proyecto completo"
+      subtitle="Conocé cada aspecto de este proyecto educativo que articula programación, astronomía y trabajo en equipo."
+    />
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      <NavCard href="/institucion" icon="🏫" title="El Nacional" subtitle="Institución educativa" />
-      <NavCard href="/carrera" icon="💻" title="La Carrera" subtitle="Desarrollo de Software" />
-      <NavCard href="/proyecto" icon="🚀" title="El Proyecto" subtitle="Astrónomos por un día" />
-      <NavCard href="/juegos" icon="🎮" title="Videojuegos" subtitle={`${games.length} juegos educativos`} />
-      <NavCard href="/equipo" icon="👥" title="Estudiantes" subtitle="Los desarrolladores" />
-      <NavCard href="/tecnologias" icon="⚙️" title="Tecnologías" subtitle="Stack profesional" />
-      <NavCard href="/impacto" icon="📊" title="Impacto" subtitle="Resultados concretos" />
-      <NavCard href="/testimonios" icon="💬" title="Testimonios" subtitle="Voces del proyecto" />
+      <NavCard
+        href="/institucion"
+        icon="🏫"
+        title="El Nacional"
+        subtitle="Institución educativa"
+      />
+      <NavCard
+        href="/carrera"
+        icon="💻"
+        title="La Carrera"
+        subtitle="Desarrollo de Software"
+      />
+      <NavCard
+        href="/proyecto"
+        icon="🚀"
+        title="El Proyecto"
+        subtitle="Astrónomos por un día"
+      />
+      <NavCard
+        href="/juegos"
+        icon="🎮"
+        title="Videojuegos"
+        subtitle={`${games.length} juegos educativos`}
+      />
+      <NavCard
+        href="/equipo"
+        icon="👥"
+        title="Estudiantes"
+        subtitle="Los desarrolladores"
+      />
+      <NavCard
+        href="/tecnologias"
+        icon="⚙️"
+        title="Tecnologías"
+        subtitle="Stack profesional"
+      />
+      <NavCard
+        href="/impacto"
+        icon="📊"
+        title="Impacto"
+        subtitle="Resultados concretos"
+      />
+      <NavCard
+        href="/testimonios"
+        icon="💬"
+        title="Testimonios"
+        subtitle="Voces del proyecto"
+      />
     </div>
   </Section>
 
   <Divider />
 
-  <section class="py-24 relative overflow-hidden before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-[600px] before:h-[300px] before:bg-[radial-gradient(ellipse,rgba(79,127,255,0.07),transparent_70%)] before:pointer-events-none before:blur-30">
+  <section
+    class="py-24 relative overflow-hidden before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-[600px] before:h-[300px] before:bg-[radial-gradient(ellipse,rgba(79,127,255,0.07),transparent_70%)] before:pointer-events-none before:blur-30"
+  >
     <div class="max-w-[1120px] mx-auto px-10 max-md:px-5">
-      <SectionHeader eyebrow="Resultados concretos" title="El impacto" highlight="en números" subtitle="Cada número representa trabajo, aprendizaje y transformación real en la comunidad educativa de La Carlota." />
-      <div class="grid grid-cols-3 md:grid-cols-5 gap-0.5 bg-white/5 rounded-[20px] overflow-hidden border border-white/5">
-        {metrics.map((m) => (
-          <MetricCard key={m.label} metric={m} client:load />
-        ))}
+      <SectionHeader
+        eyebrow="Resultados concretos"
+        title="El impacto"
+        highlight="en números"
+        subtitle="Cada número representa trabajo, aprendizaje y transformación real en la comunidad educativa de La Carlota."
+      />
+      <div
+        class="grid grid-cols-3 md:grid-cols-5 gap-0.5 bg-white/5 rounded-[20px] overflow-hidden border border-white/5"
+      >
+        {
+          metrics.map((m) => (
+            <MetricCard key={m.label} metric={m} client:load />
+          ))
+        }
       </div>
     </div>
   </section>
 
   <Section bg="bg-bg2">
     <div class="flex flex-col items-center text-center">
-      <div class="inline-flex items-center gap-2 font-mono text-[10px] tracking-widest uppercase text-a1/75 before:content-[''] before:w-5 before:h-px before:bg-a1/50">
+      <div
+        class="inline-flex items-center gap-2 font-mono text-[10px] tracking-widest uppercase text-a1/75 before:content-[''] before:w-5 before:h-px before:bg-a1/50"
+      >
         Expo Carrera 2026
       </div>
-      <h2 class="text-[clamp(28px,5vw,56px)] font-extrabold tracking-tight leading-[1.1] text-white mt-4 mb-5">
+      <h2
+        class="text-[clamp(28px,5vw,56px)] font-extrabold tracking-tight leading-[1.1] text-white mt-4 mb-5"
+      >
         Formando desarrolladores<br />
-        <span class="bg-gradient-to-r from-a1 via-a2 to-a3 bg-clip-text text-transparent">que crean soluciones reales</span>
+        <span
+          class="bg-gradient-to-r from-a1 via-a2 to-a3 bg-clip-text text-transparent"
+          >que crean soluciones reales</span
+        >
       </h2>
-      <div class="bg-bg3 border border-a1/25 rounded-[20px] p-9 max-w-[700px] text-left relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-0.5 before:bg-gradient-to-r before:from-a1 before:via-a2 before:to-a3">
-        <div class="font-mono text-[9px] tracking-wider uppercase text-a1/75 mb-3">Tecnicatura en Programación Full Stack · UPC · El Nacional</div>
-        <div class="text-[clamp(18px,2.5vw,26px)] font-bold text-t1 tracking-tight leading-tight mb-3.5">Desarrollo de Software aplicado a la Educación</div>
+      <div
+        class="bg-bg3 border border-a1/25 rounded-[20px] p-9 max-w-[700px] text-left relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-0.5 before:bg-gradient-to-r before:from-a1 before:via-a2 before:to-a3"
+      >
+        <div
+          class="font-mono text-[9px] tracking-wider uppercase text-a1/75 mb-3"
+        >
+          Tecnicatura en Programación Full Stack · UPC · El Nacional
+        </div>
+        <div
+          class="text-[clamp(18px,2.5vw,26px)] font-bold text-t1 tracking-tight leading-tight mb-3.5"
+        >
+          Desarrollo de Software aplicado a la Educación
+        </div>
         <p class="text-[14px] text-t2 leading-relaxed font-light">
-          Los estudiantes de <strong class="text-t1 font-medium">Práctica Profesionalizante I y Programación II</strong> aplican conocimientos técnicos en proyectos que generan <strong class="text-t1 font-medium">impacto educativo real</strong>, integrando programación, creatividad e innovación. Este proyecto demuestra que el software puede transformar la forma en que los niños aprenden.
+          Los estudiantes de <strong class="text-t1 font-medium"
+            >Práctica Profesionalizante I y Programación II</strong
+          > aplican conocimientos técnicos en proyectos que generan <strong
+            class="text-t1 font-medium">impacto educativo real</strong
+          >, integrando programación, creatividad e innovación. Este proyecto
+          demuestra que el software puede transformar la forma en que los niños
+          aprenden.
         </p>
       </div>
       <div class="flex gap-3 flex-wrap justify-center mt-8">
-        <Button href="/inscripcion" variant="primary">Conocé la carrera →</Button>
+        <Button href="/inscripcion" variant="primary"
+          >Conocé la carrera →</Button
+        >
         <Button href="/equipo" variant="secondary">Conocé al equipo</Button>
       </div>
     </div>
