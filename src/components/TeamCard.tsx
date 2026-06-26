@@ -73,15 +73,6 @@ export default function TeamCard({ game, index }: Props) {
           ))}
         </div>
       </div>
-      <div className="px-6 py-3.5 border-t border-white/5 flex items-center justify-between gap-2.5 bg-bg3">
-        <span className="text-[22px]">{game.emoji}</span>
-        <a
-          href={`/juegos#${game.slug}`}
-          className="inline-flex items-center gap-1.5 text-[10px] font-semibold tracking-wider uppercase text-a1/90 bg-a1/10 border border-a1/20 rounded-md px-3.5 py-[7px] transition-all duration-200 hover:bg-a1/20 hover:text-white cursor-pointer"
-        >
-          Ver juego
-        </a>
-      </div>
     </article>
   );
 }
