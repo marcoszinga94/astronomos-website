@@ -90,7 +90,7 @@ export const timeline = [
     emoji: "🎮",
     step: "Fase 5 · Producto Final",
     title: "Implementación en la Expo Carrera",
-    text: "El videojuego terminado se integra a la Estación 5. Los estudiantes configuran el entorno, preparan la presentación y defienden sus decisiones técnicas ante docentes, autoridades y la comunidad educativa.",
+    text: "Los estudiantes configuran el entorno, preparan la presentación y defienden sus decisiones técnicas ante docentes, autoridades y la comunidad educativa.",
     chips: ["Expo Carrera 2026", "Comunicación técnica", "Presentación profesional"],
   },
   {
