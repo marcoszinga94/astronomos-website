@@ -24,6 +24,9 @@ export default function Footer() {
             © 2026 El Nacional · UPC
           </div>
         </div>
+        <div class="text-[12px] text-t2 text-center mt-6">
+          Desarrollada por Marcos Zingaretti con ❤️
+        </div>
       </div>
     </footer>
   );
