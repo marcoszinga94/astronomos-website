@@ -75,7 +75,7 @@ export interface Metric {
 export const metrics: Metric[] = [
   { icon: "🎮", value: "8", label: "Videojuegos\ndesarrollados" },
   { icon: "🎓", value: "9", label: "Estudiantes\nparticipantes" },
-  { icon: "⏱️", value: "120", suffix: "+", label: "Horas de\ndesarrollo" },
+  { icon: "⏱️", value: "150", suffix: "+", label: "Horas de\ndesarrollo" },
   { icon: "🗺️", value: "5", label: "Estaciones\ntemáticas" },
   { icon: "📚", value: "3", label: "Materias\nintegradas" },
 ];
@@ -90,7 +90,7 @@ export const heroStats: HeroStat[] = [
   { target: 8, label: "Videojuegos" },
   { target: 9, label: "Estudiantes" },
   { target: 5, label: "Estaciones" },
-  { target: 150, suffix: "+", label: "Horas dev" },
+  { target: 150, suffix: "+", label: "Horas de\ndesarrollo" },
 ];
 
 export interface InstitucionStat {
