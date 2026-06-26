@@ -3,12 +3,10 @@ export interface Game {
   dev: string;
   initials: string;
   slug: string;
-  emoji: string;
   category: string;
   weeks: string;
   objective: string;
   description: string;
-  video?: string;
   demoUrl?: string;
   image: string;
   tags: string[];
@@ -31,14 +29,12 @@ export const games: Game[] = sortGames([
     dev: "Benjamín Basiluk",
     initials: "BB",
     slug: "boom-cosmico",
-    emoji: "🚀",
     category: "Acción",
     weeks: "~3 sem.",
     objective:
       "Desarrollar coordinación y reconocimiento de constelaciones a través del juego.",
     description:
       "Controlá un cohete que recolecta estrellas para formar constelaciones mientras esquivás meteoritos. Poderes especiales, múltiples niveles y mecánica de puntuación progresiva.",
-    video: "benja.mp4",
     image: "Boom Cosmico.png",
     tags: ["Python", "Pygame"],
     gradient: "linear-gradient(135deg,#4f7fff,#7c4dff)",
@@ -51,14 +47,12 @@ export const games: Game[] = sortGames([
     dev: "Ulises Sosa",
     initials: "US",
     slug: "arcspace",
-    emoji: "🔭",
     category: "Exploración",
     weeks: "~3 sem.",
     objective:
       "Familiarizar al niño con los astros del universo de forma visual e interactiva.",
     description:
       "Explorá el universo como astrónomo espacial equipado con un telescopio digital. Fotografiá planetas, estrellas y astros para completar tu álbum cósmico personal.",
-    video: "ulises.mp4",
     image: "ARCSPACE.png",
     tags: ["Python", "Pygame"],
     gradient: "linear-gradient(135deg,#00c8ff,#4f7fff)",
@@ -71,14 +65,12 @@ export const games: Game[] = sortGames([
     dev: "Nahuel Pedraza",
     initials: "NP",
     slug: "solar-defender",
-    emoji: "🛡️",
     category: "Arcade",
     weeks: "~4 sem.",
     objective:
       "Aprender los planetas del Sistema Solar a través de la acción y el progreso por niveles.",
     description:
       "Sos un astronauta que defiende el sistema solar viajando de planeta en planeta. Mercurio, Venus, Marte, Júpiter y Saturno. Cada uno con 3 fases de dificultad creciente.",
-    video: "nahuel.mp4",
     image: "Solar Defender.png",
     tags: ["Python", "Pygame"],
     gradient: "linear-gradient(135deg,#ff6b6b,#ff9f43)",
@@ -91,14 +83,12 @@ export const games: Game[] = sortGames([
     dev: "Aleida Appendino",
     initials: "AA",
     slug: "el-cielo-cordobes",
-    emoji: "⭐",
     category: "Educativo",
     weeks: "~3 sem.",
     objective:
       "Enseñar las constelaciones visibles desde Córdoba de forma lúdica e interactiva.",
     description:
       "Guiado por Lumina, una simpática estrella exploradora, conectá estrellas en el orden correcto para formar las 12 constelaciones del cielo cordobés. Datos curiosos incluidos.",
-    video: "aleida.mp4",
     image: "el cielo cordobez.png",
     tags: ["Python", "Pygame"],
     gradient: "linear-gradient(135deg,#4fbb7c,#00c8ff)",
@@ -111,7 +101,6 @@ export const games: Game[] = sortGames([
     dev: "Marcos Zingaretti",
     initials: "MZ",
     slug: "sistema-solar",
-    emoji: "🪐",
     category: "Simulación",
     weeks: "~5 sem.",
     objective:
@@ -131,14 +120,12 @@ export const games: Game[] = sortGames([
     dev: "Ezequiel Stromberg & Celia Cassagne",
     initials: "ES",
     slug: "cartas-espaciales",
-    emoji: "🃏",
     category: "Memoria",
     weeks: "~2 sem.",
     objective:
       "Desarrollar la memoria visual y el reconocimiento de astros del Sistema Solar.",
     description:
       "Juego de memoria clásico ambientado en el espacio exterior. Encontrá todos los pares de cartas de planetas y astros antes de cometer demasiados errores. Con peligros espaciales sorpresa.",
-    video: "ezequiel.mp4",
     image: "cartas espaciales.png",
     tags: ["Python", "Pygame"],
     gradient: "linear-gradient(135deg,#ff9f43,#ff6b6b)",
@@ -151,14 +138,12 @@ export const games: Game[] = sortGames([
     dev: "Santiago Martino",
     initials: "SM",
     slug: "preguntados-kids",
-    emoji: "💡",
     category: "Trivia",
     weeks: "~3 sem.",
     objective:
       "Acercar el conocimiento astronómico a niños de 6 años con soporte visual y auditivo.",
     description:
       "Trivia astronómica diseñada para primer grado. Estética colorida, guía de audio, tres opciones de respuesta y sistema de recompensas que nunca penaliza el error para fomentar la exploración.",
-    video: "santiago.mp4",
     image: "Astro-Kids.png",
     tags: ["Python", "Pygame", "Audio"],
     gradient: "linear-gradient(135deg,#4fbb7c,#4f7fff)",
@@ -171,14 +156,12 @@ export const games: Game[] = sortGames([
     dev: "Agustín Godoy",
     initials: "AG",
     slug: "stellar-scrap",
-    emoji: "🌌",
     category: "Aventura",
     weeks: "~4 sem.",
     objective:
       "Explorar la galaxia descubriendo astros, planetas y fenómenos cósmicos.",
     description:
       "Una aventura galáctica interactiva donde el jugador viaja por diferentes sectores del universo descubriendo planetas, nebulosas y fenómenos astronómicos con mecánicas de exploración progresiva.",
-    video: "agus godoy.mp4",
     image: "Stellar Scrap.png",
     tags: ["Python", "Pygame"],
     gradient: "linear-gradient(135deg,#00c8ff,#7c4dff)",

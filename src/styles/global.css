@@ -6,7 +6,6 @@
   --color-a3: #00c8ff;
   --color-green: #4fbb7c;
   --color-orange: #ff9f43;
-  --color-red: #ff6b6b;
   --color-bg: #07090f;
   --color-bg2: #0c0f18;
   --color-bg3: #111522;
@@ -14,8 +13,6 @@
   --color-bg5: #1b2133;
   --color-t1: #f0f2f7;
   --color-t2: #8b92a8;
-  --color-t3: #4a5168;
-  --color-border: rgba(255,255,255,0.1);
   --font-sans: 'Sora', system-ui, sans-serif;
   --font-mono: 'DM Mono', monospace;
   --text-2xs: 11px;
@@ -30,7 +27,6 @@ html.light {
   --color-a3: #0099cc;
   --color-green: #2d8f55;
   --color-orange: #d97a1a;
-  --color-red: #d94040;
   --color-bg: #f5f7fa;
   --color-bg2: #eef0f5;
   --color-bg3: #e4e7ee;
@@ -38,8 +34,6 @@ html.light {
   --color-bg5: #c8cdd8;
   --color-t1: #0d111a;
   --color-t2: #3b4252;
-  --color-t3: #6b7385;
-  --color-border: rgba(0,0,0,0.08);
 }
 
 html.light [class*="border-white"] {
@@ -102,13 +96,4 @@ html.light .bg-bg\/85 {
   50% { opacity: 0.6; transform: scale(0.9); }
 }
 
-@keyframes float-particle {
-  0%, 100% { transform: translateY(0); opacity: 0.3; }
-  50% { transform: translateY(-20px); opacity: 0.8; }
-}
 
-@keyframes gradient-shift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}

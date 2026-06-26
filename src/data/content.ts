@@ -26,17 +26,6 @@ export const heroStats: HeroStat[] = [
   { target: 150, suffix: "+", label: "Horas de\ndesarrollo" },
 ];
 
-export interface InstitucionStat {
-  number: string;
-  suffix: string;
-  label: string;
-}
-
-export const institucionStats: InstitucionStat[] = [
-  { number: "2", suffix: "+", label: "Niveles educativos" },
-  { number: "3", suffix: "+", label: "Tecnicaturas" },
-];
-
 export interface CarreraStat {
   number: string;
   suffix: string;
@@ -101,29 +90,18 @@ export interface Competencia {
   icon: string;
   title: string;
   text: string;
-  projectText: string;
 }
 
 export const competencias: Competencia[] = [
-  { icon: "💻", title: "Programación", text: "Lógica, algoritmos y código funcional en Python. De cero a un producto terminado.", projectText: "Cada juego fue codificado de cero: bucles de juego, manejo de eventos, sprites, colisiones y sistemas de puntuación." },
-  { icon: "🎨", title: "Diseño de Interfaces", text: "Creación de interfaces usables, accesibles y atractivas pensadas para el usuario real.", projectText: "Interfaces diseñadas para niños de 6 años: botones grandes, colores llamativos, feedback visual y audio sin textos complejos." },
-  { icon: "🤝", title: "Trabajo en Equipo", text: "Colaboración, comunicación y coordinación en proyectos de múltiples desarrolladores.", projectText: "Exposición conjunta en la Expo: 8 juegos de distintos autores funcionando como una propuesta pedagógica unificada." },
-  { icon: "🔍", title: "Resolución de Problemas", text: "Diagnóstico, depuración y pensamiento algorítmico para solucionar errores reales.", projectText: "Bugs de colisión, errores de lógica, problemas de rendimiento y casos borde encontrados durante el testing con niños." },
-  { icon: "🧪", title: "Testing", text: "Verificación sistemática del software para garantizar calidad, usabilidad y robustez.", projectText: "Pruebas con usuarios finales reales — niños de primer grado — que encontraron bugs que ningún estudiante habría anticipado." },
-  { icon: "📢", title: "Comunicación Profesional", text: "Presentación, defensa y documentación de decisiones técnicas ante audiencias diversas.", projectText: "Presentación del juego ante docentes, autoridades, familias y niños: explicar código de manera comprensible para todos." },
-  { icon: "📋", title: "Gestión de Proyectos", text: "Planificación, seguimiento y entrega de software completo dentro de plazos reales.", projectText: "Un cuatrimestre para investigar, diseñar, desarrollar, testear y presentar un videojuego educativo funcional." },
-  { icon: "🌍", title: "Software Educativo", text: "Aplicar la tecnología para resolver problemas reales de aprendizaje con impacto comunitario.", projectText: "8 juegos que combinan contenido curricular de Ciencias Naturales de primer grado con mecánicas lúdicas pensadas pedagógicamente." },
+  { icon: "💻", title: "Programación", text: "Lógica, algoritmos y código funcional en Python. De cero a un producto terminado." },
+  { icon: "🎨", title: "Diseño de Interfaces", text: "Creación de interfaces usables, accesibles y atractivas pensadas para el usuario real." },
+  { icon: "🤝", title: "Trabajo en Equipo", text: "Colaboración, comunicación y coordinación en proyectos de múltiples desarrolladores." },
+  { icon: "🔍", title: "Resolución de Problemas", text: "Diagnóstico, depuración y pensamiento algorítmico para solucionar errores reales." },
+  { icon: "🧪", title: "Testing", text: "Verificación sistemática del software para garantizar calidad, usabilidad y robustez." },
+  { icon: "📢", title: "Comunicación Profesional", text: "Presentación, defensa y documentación de decisiones técnicas ante audiencias diversas." },
+  { icon: "📋", title: "Gestión de Proyectos", text: "Planificación, seguimiento y entrega de software completo dentro de plazos reales." },
+  { icon: "🌍", title: "Software Educativo", text: "Aplicar la tecnología para resolver problemas reales de aprendizaje con impacto comunitario." },
 ];
-
-export const aulaCards = [
-  { num: "01", icon: "📋", title: "Planificación", text: "Definición de alcance, plazos y entregables antes de comenzar a desarrollar.", result: "→ Requisitos documentados" },
-  { num: "02", icon: "🗂️", title: "Organización", text: "Estructura del código, carpetas y recursos siguiendo buenas prácticas de ingeniería.", result: "→ Repositorio ordenado" },
-  { num: "03", icon: "⌨️", title: "Desarrollo", text: "Implementación iterativa con control de versiones y resolución de bugs en tiempo real.", result: "→ Código funcional" },
-  { num: "04", icon: "📄", title: "Documentación", text: "Manual técnico, comentarios en el código y descripción del producto para el equipo docente.", result: "→ Proyecto documentado" },
-  { num: "05", icon: "🧪", title: "Pruebas", text: "Testing con usuarios reales, detección de errores y ciclos de mejora continua.", result: "→ Producto validado" },
-  { num: "06", icon: "🎤", title: "Presentación", text: "Defensa técnica ante la comunidad con demostración en vivo del producto final.", result: "→ Impacto real" },
-];
-
 
 export interface Testimonial {
   text: string;

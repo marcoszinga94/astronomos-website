@@ -42,65 +42,6 @@ export const estaciones: Estacion[] = [
   },
 ];
 
-export const cronologia = [
-  {
-    num: "01",
-    emoji: "💡",
-    phase: "Etapa 1",
-    title: "Idea inicial",
-    text: "La propuesta surge de la cátedra de Práctica Profesionalizante I: crear videojuegos educativos sobre astronomía para niños de primer grado, articulando contenidos de Programación II.",
-    tags: ["PP1", "Programación II"],
-  },
-  {
-    num: "02",
-    emoji: "🔍",
-    phase: "Etapa 2",
-    title: "Investigación",
-    text: "Cada estudiante investiga su temática: astronomía infantil, mecánicas de videojuegos educativos, referencias visuales y pedagógicas apropiadas para la edad objetivo.",
-    tags: ["UX Research", "Pedagogía"],
-  },
-  {
-    num: "03",
-    emoji: "🎨",
-    phase: "Etapa 3",
-    title: "Diseño",
-    text: "Wireframes, mockups y definición de mecánicas. Cada juego tiene una identidad visual única pero cohesiva, pensada para el usuario de 6 años.",
-    tags: ["UI Design", "Mecánicas"],
-  },
-  {
-    num: "04",
-    emoji: "⌨️",
-    phase: "Etapa 4",
-    title: "Desarrollo",
-    text: "Codificación, iteraciones, commits y resolución de problemas técnicos. La etapa más extensa: cada juego representa semanas de trabajo individual con Python y Pygame.",
-    tags: ["Python", "Pygame", "Git"],
-  },
-  {
-    num: "05",
-    emoji: "🧪",
-    phase: "Etapa 5",
-    title: "Pruebas",
-    text: "Testing funcional, pruebas con usuarios reales y corrección de bugs. Se valida que el juego sea intuitivo, seguro y disfrutable para niños sin experiencia previa.",
-    tags: ["QA", "Testing de usuario"],
-  },
-  {
-    num: "06",
-    emoji: "🚀",
-    phase: "Etapa 6",
-    title: "Implementación",
-    text: "Preparación del ejecutable final, documentación técnica y configuración del entorno de la Expo. El producto está listo para ser usado por los niños.",
-    tags: ["Deploy", "Documentación"],
-  },
-  {
-    num: "07",
-    emoji: "🏆",
-    phase: "Etapa 7 · Hoy",
-    title: "Expo Carrera 2026",
-    text: "Presentación ante la comunidad: niños, docentes, autoridades y familias descubren los videojuegos. Los estudiantes muestran el resultado de meses de trabajo profesional.",
-    tags: ["Expo 2026", "Comunidad educativa"],
-  },
-];
-
 export const timeline = [
   {
     emoji: "📋",

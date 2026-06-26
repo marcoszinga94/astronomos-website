@@ -9,42 +9,83 @@ import ProgressBar from "../components/ui/ProgressBar.astro";
 import { metrics } from "../data/content";
 ---
 
-<BaseLayout title="Impacto — Resultados concretos">
-  <section class="py-24 relative overflow-hidden before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-[600px] before:h-[300px] before:bg-[radial-gradient(ellipse,rgba(79,127,255,0.07),transparent_70%)] before:pointer-events-none before:blur-30">
+<BaseLayout title="Impacto">
+  <section
+    class="py-24 relative overflow-hidden before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-[600px] before:h-[300px] before:bg-[radial-gradient(ellipse,rgba(79,127,255,0.07),transparent_70%)] before:pointer-events-none before:blur-30"
+  >
     <div class="max-w-280 mx-auto px-10 max-md:px-5">
       <Reveal>
-      <SectionHeader as="h1" eyebrow="Resultados concretos" title="El impacto" highlight="en números" subtitle="Cada número representa trabajo, aprendizaje y transformación real en la comunidad educativa de La Carlota." />
+        <SectionHeader
+          as="h1"
+          eyebrow="Resultados concretos"
+          title="El impacto"
+          highlight="en números"
+          subtitle="Cada número representa trabajo, aprendizaje y transformación real en la comunidad educativa de La Carlota."
+        />
 
-      <div class="grid grid-cols-3 md:grid-cols-5 gap-0.5 bg-white/5 rounded-card overflow-hidden border border-white/5 mb-12">
-        {metrics.map((m) => (
-          <MetricCard key={m.label} metric={m} client:load />
-        ))}
-      </div>
+        <div
+          class="grid grid-cols-3 md:grid-cols-5 gap-0.5 bg-white/5 rounded-card overflow-hidden border border-white/5 mb-12"
+        >
+          {
+            metrics.map((m) => (
+              <MetricCard key={m.label} metric={m} client:load />
+            ))
+          }
+        </div>
       </Reveal>
 
       <Reveal>
-      <div class="grid lg:grid-cols-2 gap-14 items-center mt-6">
-        <div>
-          <h3 class="text-[clamp(20px,2.5vw,28px)] font-bold text-t1 tracking-tight mb-4">Más que números</h3>
-          <p class="text-sm text-t2 leading-relaxed mb-6">
-            Cada <a href="/juegos" class="text-a1 hover:text-t1 underline underline-offset-2 transition-colors">videojuego</a> representa semanas de trabajo individual: investigación, diseño, desarrollo, pruebas y presentación. Detrás de cada cifra hay un <a href="/equipo" class="text-a1 hover:text-t1 underline underline-offset-2 transition-colors">estudiante</a> que aprendió a programar resolviendo problemas reales.
-          </p>
-          <div class="flex flex-col gap-3">
-            <FeatureListItem icon="🎯" title="Articulación curricular" text="3 materias integradas en un proyecto común" />
-            <FeatureListItem icon="👥" title="Trabajo colaborativo" text="8 desarrolladores individuales, un equipo" />
-            <FeatureListItem icon="🌍" title="Impacto comunitario" text="Niños de La Carlota alcanzados" />
+        <div class="grid lg:grid-cols-2 gap-14 items-center mt-6">
+          <div>
+            <h3
+              class="text-[clamp(20px,2.5vw,28px)] font-bold text-t1 tracking-tight mb-4"
+            >
+              Más que números
+            </h3>
+            <p class="text-sm text-t2 leading-relaxed mb-6">
+              Cada <a
+                href="/juegos"
+                class="text-a1 hover:text-t1 underline underline-offset-2 transition-colors"
+                >videojuego</a
+              > representa semanas de trabajo individual: investigación, diseño, desarrollo,
+              pruebas y presentación. Detrás de cada cifra hay un <a
+                href="/equipo"
+                class="text-a1 hover:text-t1 underline underline-offset-2 transition-colors"
+                >estudiante</a
+              > que aprendió a programar resolviendo problemas reales.
+            </p>
+            <div class="flex flex-col gap-3">
+              <FeatureListItem
+                icon="🎯"
+                title="Articulación curricular"
+                text="3 materias integradas en un proyecto común"
+              />
+              <FeatureListItem
+                icon="👥"
+                title="Trabajo colaborativo"
+                text="8 desarrolladores individuales, un equipo"
+              />
+              <FeatureListItem
+                icon="🌍"
+                title="Impacto comunitario"
+                text="Niños de La Carlota alcanzados"
+              />
+            </div>
           </div>
+          <BannerCard bg="bg-bg3">
+            <div
+              class="font-mono text-2xs tracking-wider uppercase text-a1/70 mb-3"
+            >
+              Distribución de tiempo
+            </div>
+            <div class="flex flex-col gap-3">
+              <ProgressBar label="Investigación y Diseño" percent={20} />
+              <ProgressBar label="Desarrollo" percent={55} />
+              <ProgressBar label="Testing y Correcciones" percent={18} />
+              <ProgressBar label="Presentación" percent={7} />
+            </div>
+          </BannerCard>
         </div>
-        <BannerCard bg="bg-bg3">
-          <div class="font-mono text-2xs tracking-wider uppercase text-a1/70 mb-3">Distribución de tiempo</div>
-          <div class="flex flex-col gap-3">
-            <ProgressBar label="Investigación y Diseño" percent={20} />
-            <ProgressBar label="Desarrollo" percent={55} />
-            <ProgressBar label="Testing y Correcciones" percent={18} />
-            <ProgressBar label="Presentación" percent={7} />
-          </div>
-        </BannerCard>
-      </div>
       </Reveal>
     </div>
   </section>

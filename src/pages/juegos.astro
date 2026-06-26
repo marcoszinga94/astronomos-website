@@ -8,18 +8,26 @@ import Reveal from "../components/Reveal.astro";
 import { games } from "../data/games";
 ---
 
-<BaseLayout title="Videojuegos — 8 juegos educativos">
+<BaseLayout title="Videojuegos">
   <Section>
-    <SectionHeader as="h1" eyebrow="Estación 05 · Producción estudiantil" title="Los" highlight="Videojuegos" subtitle="Ocho videojuegos educativos creados desde cero por estudiantes de la Tecnicatura. Cada uno con mecánicas originales, diseño propio e impacto pedagógico medible." />
+    <SectionHeader
+      as="h1"
+      eyebrow="Estación 05 · Producción estudiantil"
+      title="Los"
+      highlight="Videojuegos"
+      subtitle="Ocho videojuegos educativos creados desde cero por estudiantes de la Tecnicatura. Cada uno con mecánicas originales, diseño propio e impacto pedagógico medible."
+    />
 
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-      {games.map((game) => (
-        <Reveal>
-          <div id={game.slug} key={game.slug}>
-            <GameCard game={game} />
-          </div>
-        </Reveal>
-      ))}
+      {
+        games.map((game) => (
+          <Reveal>
+            <div id={game.slug} key={game.slug}>
+              <GameCard game={game} />
+            </div>
+          </Reveal>
+        ))
+      }
     </div>
 
     <div class="flex justify-center mt-12">
@@ -30,7 +38,8 @@ import { games } from "../data/games";
 
 <style>
   @keyframes glow-pulse {
-    0%, 100% {
+    0%,
+    100% {
       box-shadow:
         0 0 0 2px var(--color-a1),
         0 0 30px rgba(79, 127, 255, 0.25),

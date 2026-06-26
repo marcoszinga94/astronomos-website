@@ -8,51 +8,92 @@ import FeatureCard from "../components/ui/FeatureCard.astro";
 import BannerCard from "../components/ui/BannerCard.astro";
 ---
 
-<BaseLayout title="Inscripción — Conocé la escuela">
+<BaseLayout title="Inscripción">
   <Section innerClass="max-w-280">
     <Reveal>
-    <div class="grid lg:grid-cols-2 gap-12 items-start">
-      <div>
-        <SectionHeader eyebrow="Tecnicatura Universitaria · UPC" title="Conocé la" highlight="escuela" subtitle="Formación universitaria presencial en La Carlota con título oficial de la Universidad Provincial de Córdoba." />
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <SectionHeader
+            eyebrow="Tecnicatura Universitaria · UPC"
+            title="Conocé la"
+            highlight="escuela"
+            subtitle="Formación universitaria presencial en La Carlota con título oficial de la Universidad Provincial de Córdoba."
+          />
 
-        <div class="flex flex-col gap-3">
-          <FeatureCard iconStyle="dot" title="Perfil profesional" text="Técnico Universitario en Programación Full Stack — con competencias en desarrollo web, aplicaciones móviles, bases de datos e inteligencia artificial." />
-          <FeatureCard iconStyle="dot" title="Duración" text="3 años de cursado presencial en la ciudad de La Carlota, Córdoba. Título oficial reconocido por la Universidad Provincial de Córdoba (UPC)." />
-          <FeatureCard iconStyle="dot" title="Áreas de trabajo" text="Empresas tecnológicas · Startups · Organismos públicos · Sector educativo · Trabajo independiente (freelance) · Emprendimiento propio." />
-          <FeatureCard iconStyle="dot" title="Materias clave" text="Programación I y II · Desarrollo Web · Bases de Datos · Inteligencia Artificial · Redes · Práctica Profesionalizante · Proyecto Final Integrador." />
+          <div class="flex flex-col gap-3">
+            <FeatureCard
+              iconStyle="dot"
+              title="Perfil profesional"
+              text="Técnico Universitario en Programación Full Stack — con competencias en desarrollo web, aplicaciones móviles, bases de datos e inteligencia artificial."
+            />
+            <FeatureCard
+              iconStyle="dot"
+              title="Duración"
+              text="3 años de cursado presencial en la ciudad de La Carlota, Córdoba. Título oficial reconocido por la Universidad Provincial de Córdoba (UPC)."
+            />
+            <FeatureCard
+              iconStyle="dot"
+              title="Áreas de trabajo"
+              text="Empresas tecnológicas · Startups · Organismos públicos · Sector educativo · Trabajo independiente (freelance) · Emprendimiento propio."
+            />
+            <FeatureCard
+              iconStyle="dot"
+              title="Materias clave"
+              text="Programación I y II · Desarrollo Web · Bases de Datos · Inteligencia Artificial · Redes · Práctica Profesionalizante · Proyecto Final Integrador."
+            />
+          </div>
+        </div>
+
+        <div>
+          <BannerCard bg="bg-bg3">
+            <div class="flex flex-col gap-5">
+              <div
+                class="font-mono text-2xs tracking-wider uppercase text-a1/70"
+              >
+                Inscripciones abiertas · 2027
+              </div>
+              <h3
+                class="text-2xl font-bold text-t1 tracking-tight leading-tight"
+              >
+                Programación Full Stack<br />en La Carlota
+              </h3>
+              <p class="text-15 text-t2 leading-relaxed">
+                Aprendé a desarrollar software real con docentes especializados,
+                proyectos de impacto comunitario y titulación universitaria
+                oficial.
+              </p>
+              <div class="flex flex-col gap-2.5">
+                <div class="flex items-center gap-2.5 text-15 text-t2">
+                  <span class="text-base shrink-0">📍</span>
+                  Esc. Educ. Superior El Nacional · La Carlota, Córdoba
+                </div>
+                <div class="flex items-center gap-2.5 text-15 text-t2">
+                  <span class="text-base shrink-0">🎓</span>
+                  Título oficial — Universidad Provincial de Córdoba (UPC)
+                </div>
+                <div class="flex items-center gap-2.5 text-15 text-t2">
+                  <span class="text-base shrink-0">📅</span>
+                  Cursado presencial — inicio de clases marzo 2027
+                </div>
+                <div class="flex items-center gap-2.5 text-15 text-t2">
+                  <span class="text-base shrink-0">💼</span>
+                  Práctica profesional desde el primer año
+                </div>
+              </div>
+              <Button
+                href="https://instagram.com/nivelsuperiorelnacional"
+                variant="primary-gradient"
+                fullWidth
+                target="_blank"
+                rel="noopener noreferrer">Quiero inscribirme →</Button
+              >
+              <Button href="/escuela" variant="secondary" fullWidth
+                >Más información sobre la escuela</Button
+              >
+            </div>
+          </BannerCard>
         </div>
       </div>
-
-      <div>
-        <BannerCard bg="bg-bg3">
-          <div class="flex flex-col gap-5">
-            <div class="font-mono text-2xs tracking-wider uppercase text-a1/70">Inscripciones abiertas · 2027</div>
-            <h3 class="text-2xl font-bold text-t1 tracking-tight leading-tight">Programación Full Stack<br />en La Carlota</h3>
-            <p class="text-15 text-t2 leading-relaxed">Aprendé a desarrollar software real con docentes especializados, proyectos de impacto comunitario y titulación universitaria oficial.</p>
-            <div class="flex flex-col gap-2.5">
-              <div class="flex items-center gap-2.5 text-15 text-t2">
-                <span class="text-base shrink-0">📍</span>
-                Esc. Educ. Superior El Nacional · La Carlota, Córdoba
-              </div>
-              <div class="flex items-center gap-2.5 text-15 text-t2">
-                <span class="text-base shrink-0">🎓</span>
-                Título oficial — Universidad Provincial de Córdoba (UPC)
-              </div>
-              <div class="flex items-center gap-2.5 text-15 text-t2">
-                <span class="text-base shrink-0">📅</span>
-                Cursado presencial — inicio de clases marzo 2027
-              </div>
-              <div class="flex items-center gap-2.5 text-15 text-t2">
-                <span class="text-base shrink-0">💼</span>
-                Práctica profesional desde el primer año
-              </div>
-            </div>
-            <Button href="https://instagram.com/nivelsuperiorelnacional" variant="primary-gradient" fullWidth target="_blank" rel="noopener noreferrer">Quiero inscribirme →</Button>
-            <Button href="/escuela" variant="secondary" fullWidth>Más información sobre la escuela</Button>
-          </div>
-        </BannerCard>
-      </div>
-    </div>
     </Reveal>
   </Section>
 </BaseLayout>
