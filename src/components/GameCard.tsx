@@ -20,17 +20,35 @@ export default function GameCard({ game }: Props) {
 
   return (
     <article className="bg-bg2 border border-white/5 rounded-card overflow-hidden flex flex-col transition-all duration-300 hover:border-a1/35 hover:shadow-[0_16px_48px_rgba(0,0,0,0.5),0_0_32px_rgba(79,127,255,0.1)] hover:-translate-y-1">
-      <div
-        className="aspect-video relative overflow-hidden flex items-center justify-center"
-        style={{ background: game.gradient }}
-      >
-        <img
-          src={`/images/${encodeURIComponent(game.image)}`}
-          alt={game.title}
-          className="w-full h-full object-contain p-4"
-          loading="lazy"
-        />
-      </div>
+      {game.demoUrl ? (
+        <a
+          href={game.demoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="aspect-video relative overflow-hidden flex items-center justify-center cursor-pointer"
+          style={{ background: game.gradient }}
+        >
+          <img
+            src={`/images/${encodeURIComponent(game.image)}`}
+            alt={game.title}
+            className="w-full h-full object-contain p-4"
+            loading="lazy"
+          />
+        </a>
+      ) : (
+        <div
+          className="aspect-video relative overflow-hidden flex items-center justify-center cursor-pointer"
+          style={{ background: game.gradient }}
+          onClick={handleDemo}
+        >
+          <img
+            src={`/images/${encodeURIComponent(game.image)}`}
+            alt={game.title}
+            className="w-full h-full object-contain p-4"
+            loading="lazy"
+          />
+        </div>
+      )}
       <div className="p-6 flex flex-col gap-3 flex-1">
         <div className="flex flex-wrap gap-1.5">
           <span className="inline-flex items-center font-mono text-2xs font-medium tracking-wider uppercase px-2 py-1 rounded bg-a1/10 border border-a1/20 text-a1/90">

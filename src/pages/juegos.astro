@@ -13,7 +13,9 @@ import { games } from "../data/games";
 
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
       {games.map((game) => (
-        <GameCard game={game} key={game.slug} />
+        <div id={game.slug} key={game.slug}>
+          <GameCard game={game} />
+        </div>
       ))}
     </div>
 
@@ -22,3 +24,28 @@ import { games } from "../data/games";
     </div>
   </Section>
 </BaseLayout>
+
+<style>
+  @keyframes glow-pulse {
+    0%, 100% {
+      box-shadow:
+        0 0 0 2px var(--color-a1),
+        0 0 30px rgba(79, 127, 255, 0.25),
+        0 0 80px rgba(79, 127, 255, 0.12);
+    }
+    50% {
+      box-shadow:
+        0 0 0 2px var(--color-a1),
+        0 0 50px rgba(79, 127, 255, 0.45),
+        0 0 120px rgba(79, 127, 255, 0.2);
+    }
+  }
+
+  [id] {
+    scroll-margin-top: 30vh;
+    border-radius: 20px;
+  }
+  [id]:target {
+    animation: glow-pulse 2s ease-in-out infinite;
+  }
+</style>
