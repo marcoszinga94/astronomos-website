@@ -69,7 +69,7 @@ export default function TeamCard({ game, index }: Props) {
         </div>
         <a
           href={`/juegos#${game.slug}`}
-          className="mt-1 inline-flex items-center gap-1 text-xs font-semibold tracking-wider uppercase text-a1/80 bg-a1/8 border border-a1/15 rounded-md px-3.5 py-2 transition-all duration-200 hover:bg-a1/20 hover:text-white hover:-translate-y-0.5 self-start"
+          className="mt-1 inline-flex items-center gap-1 text-xs font-semibold tracking-wider uppercase text-a1/80 bg-a1/8 border border-a1/15 rounded-md px-3.5 py-2 transition-all duration-200 hover:bg-a1/20 hover:text-t1 hover:-translate-y-0.5 self-start"
         >
           Ver videojuego →
         </a>

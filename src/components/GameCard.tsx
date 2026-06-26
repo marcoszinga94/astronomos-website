@@ -82,7 +82,7 @@ export default function GameCard({ game }: Props) {
               href={game.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase text-a1/90 bg-a1/10 border border-a1/20 rounded-md px-3.5 py-2 transition-all duration-200 hover:bg-a1/20 hover:text-white hover:-translate-y-0.5 whitespace-nowrap"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase text-a1/90 bg-a1/10 border border-a1/20 rounded-md px-3.5 py-2 transition-all duration-200 hover:bg-a1/20 hover:text-t1 hover:-translate-y-0.5 whitespace-nowrap"
             >
               JUGAR ↗
             </a>

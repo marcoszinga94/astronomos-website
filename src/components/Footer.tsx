@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="text-xs text-t2 text-center mt-6">
-          Desarrollada por <a href="https://marcoszinga.vercel.app" target="_blank" rel="noopener noreferrer" className="text-a1 hover:text-white underline underline-offset-2 transition-colors">Marcos Zingaretti</a> y <a href="https://instagram.com/alejandro_appendino" target="_blank" rel="noopener noreferrer" className="text-a1 hover:text-white underline underline-offset-2 transition-colors">Alejandro Appendino</a> con ❤️
+          Desarrollada por <a href="https://marcoszinga.vercel.app" target="_blank" rel="noopener noreferrer" className="text-a1 hover:text-t1 underline underline-offset-2 transition-colors">Marcos Zingaretti</a> y <a href="https://instagram.com/alejandro_appendino" target="_blank" rel="noopener noreferrer" className="text-a1 hover:text-t1 underline underline-offset-2 transition-colors">Alejandro Appendino</a> con ❤️
         </div>
       </div>
     </footer>

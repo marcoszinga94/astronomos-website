@@ -15,12 +15,47 @@
   --color-t1: #f0f2f7;
   --color-t2: #8b92a8;
   --color-t3: #4a5168;
+  --color-border: rgba(255,255,255,0.1);
   --font-sans: 'Sora', system-ui, sans-serif;
   --font-mono: 'DM Mono', monospace;
   --text-2xs: 11px;
   --text-13: 13px;
   --text-15: 15px;
   --radius-card: 20px;
+}
+
+html.light {
+  --color-a1: #2b5ce6;
+  --color-a2: #5a2bd1;
+  --color-a3: #0099cc;
+  --color-green: #2d8f55;
+  --color-orange: #d97a1a;
+  --color-red: #d94040;
+  --color-bg: #f5f7fa;
+  --color-bg2: #eef0f5;
+  --color-bg3: #e4e7ee;
+  --color-bg4: #d8dce5;
+  --color-bg5: #c8cdd8;
+  --color-t1: #0d111a;
+  --color-t2: #3b4252;
+  --color-t3: #6b7385;
+  --color-border: rgba(0,0,0,0.08);
+}
+
+html.light [class*="border-white"] {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+html.light [class*="bg-white"] {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+html.light nav {
+  border-bottom-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+html.light .bg-bg\/85 {
+  background-color: rgba(245, 247, 250, 0.85) !important;
 }
 
 @layer base {
