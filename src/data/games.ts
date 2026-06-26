@@ -76,7 +76,7 @@ export const games: Game[] = sortGames([
     gradient: "linear-gradient(135deg,#ff6b6b,#ff9f43)",
     color: "#ff6b6b",
     highlight:
-      "Lo más desafiante fue que el juego enseñara los planetas sin que el niño se diera cuenta de que estaba aprendiendo. Que fuera primero divertido.",
+      "Lo más desafiante fue que el juego enseñara los planetas de manera divertida.",
   },
   {
     title: "El Cielo Cordobés",
@@ -149,7 +149,7 @@ export const games: Game[] = sortGames([
     gradient: "linear-gradient(135deg,#4fbb7c,#4f7fff)",
     color: "#4fbb7c",
     highlight:
-      "Aprendí que diseñar para niños que todavía no leen bien es un desafío de UX enorme. Todo tiene que comunicarse visualmente y con sonido, sin depender del texto.",
+      "Aprendí que diseñar para niños es un desafío de UX enorme. Todo tiene que comunicarse visualmente y con sonido, sin depender del texto.",
   },
   {
     title: "Stellar Scrap",
