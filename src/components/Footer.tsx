@@ -13,8 +13,7 @@ export default function Footer() {
           </div>
           <div className="flex gap-5 flex-wrap">
             <a href="/" className="text-[11px] text-t3 transition-colors hover:text-t1">Inicio</a>
-            <a href="/institucion" className="text-[11px] text-t3 transition-colors hover:text-t1">El Nacional</a>
-            <a href="/carrera" className="text-[11px] text-t3 transition-colors hover:text-t1">La Carrera</a>
+            <a href="/carrera" className="text-[11px] text-t3 transition-colors hover:text-t1">Institución y Carrera</a>
             <a href="/equipo" className="text-[11px] text-t3 transition-colors hover:text-t1">Estudiantes</a>
             <a href="/proyecto" className="text-[11px] text-t3 transition-colors hover:text-t1">El Proyecto</a>
             <a href="/juegos" className="text-[11px] text-t3 transition-colors hover:text-t1">Videojuegos</a>
