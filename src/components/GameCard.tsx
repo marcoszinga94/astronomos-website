@@ -45,7 +45,7 @@ export default function GameCard({ game }: Props) {
         </div>
         <h3 className="text-lg font-bold text-t1 tracking-tight leading-tight">{game.title}</h3>
         <p className="text-sm text-t2 flex items-center gap-1.5">
-          por <span className="text-a1/75 font-medium">{game.dev}</span>
+          por <a href={`/equipo#${game.slug}`} className="text-a1/75 font-medium hover:text-a1 transition-colors underline underline-offset-2">{game.dev}</a>
         </p>
         <div className="text-13 text-t2 leading-relaxed py-2.5 px-3 bg-bg3 border-l-2 border-a1 rounded-r-md italic">
           {game.objective}
