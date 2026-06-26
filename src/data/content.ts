@@ -77,7 +77,6 @@ export const metrics: Metric[] = [
   { icon: "🎓", value: "9", label: "Estudiantes\nparticipantes" },
   { icon: "⏱️", value: "120", suffix: "+", label: "Horas de\ndesarrollo" },
   { icon: "🗺️", value: "5", label: "Estaciones\ntemáticas" },
-  { icon: "👶", value: "100", suffix: "+", label: "Niños\nalcanzados" },
   { icon: "📚", value: "3", label: "Materias\nintegradas" },
 ];
 

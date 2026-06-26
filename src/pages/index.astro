@@ -78,7 +78,7 @@ import NavCard from "../components/ui/NavCard.astro";
   <section class="py-24 relative overflow-hidden before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-[600px] before:h-[300px] before:bg-[radial-gradient(ellipse,rgba(79,127,255,0.07),transparent_70%)] before:pointer-events-none before:blur-30">
     <div class="max-w-[1120px] mx-auto px-10 max-md:px-5">
       <SectionHeader eyebrow="Resultados concretos" title="El impacto" highlight="en números" subtitle="Cada número representa trabajo, aprendizaje y transformación real en la comunidad educativa de La Carlota." />
-      <div class="grid grid-cols-3 md:grid-cols-6 gap-0.5 bg-white/5 rounded-[20px] overflow-hidden border border-white/5">
+      <div class="grid grid-cols-3 md:grid-cols-5 gap-0.5 bg-white/5 rounded-[20px] overflow-hidden border border-white/5">
         {metrics.map((m) => (
           <MetricCard key={m.label} metric={m} client:load />
         ))}

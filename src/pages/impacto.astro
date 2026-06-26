@@ -13,7 +13,7 @@ import { metrics } from "../data/content";
     <div class="max-w-[1120px] mx-auto px-10 max-md:px-5">
       <SectionHeader eyebrow="Resultados concretos" title="El impacto" highlight="en números" subtitle="Cada número representa trabajo, aprendizaje y transformación real en la comunidad educativa de La Carlota." />
 
-      <div class="grid grid-cols-3 md:grid-cols-6 gap-0.5 bg-white/5 rounded-[20px] overflow-hidden border border-white/5 mb-12">
+      <div class="grid grid-cols-3 md:grid-cols-5 gap-0.5 bg-white/5 rounded-[20px] overflow-hidden border border-white/5 mb-12">
         {metrics.map((m) => (
           <MetricCard key={m.label} metric={m} client:load />
         ))}
@@ -28,7 +28,7 @@ import { metrics } from "../data/content";
           <div class="flex flex-col gap-3">
             <FeatureListItem icon="🎯" title="Articulación curricular" text="3 materias integradas en un proyecto común" />
             <FeatureListItem icon="👥" title="Trabajo colaborativo" text="8 desarrolladores individuales, un equipo" />
-            <FeatureListItem icon="🌍" title="Impacto comunitario" text="100+ niños de La Carlota alcanzados" />
+            <FeatureListItem icon="🌍" title="Impacto comunitario" text="Niños de La Carlota alcanzados" />
           </div>
         </div>
         <BannerCard bg="bg-bg3">
