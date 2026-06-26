@@ -22,36 +22,18 @@ export default function TeamCard({ game, index }: Props) {
   return (
     <article className="bg-bg3 border border-white/10 rounded-[20px] overflow-hidden flex flex-col transition-all duration-300 hover:border-a1/30 hover:shadow-[0_12px_40px_rgba(0,0,0,0.4),0_0_24px_rgba(79,127,255,0.08)] hover:-translate-y-1">
       <div
-        className="p-[22px_24px] flex items-center gap-4 border-b border-white/10 bg-bg3 relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-0.5"
+        className="p-[16px_24px] border-b border-white/10 bg-bg3 relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-0.5"
         style={{ background: gradient }}
       >
-        <div
-          className="flex items-center gap-4 w-full"
-          style={{ background: "transparent" }}
-        >
-          <div
-            className="size-15 rounded-full flex items-center justify-center text-lg font-bold shrink-0 relative bg-bg4 border-2 border-transparent after:content-[''] after:absolute after:-inset-0.5 after:rounded-full after:-z-1"
-            style={{ background: gradient }}
-          >
-            <span
-              className="bg-clip-text text-transparent font-bold text-[17px]"
-              style={{ backgroundImage: gradient }}
-            >
-              {game.initials}
-            </span>
-          </div>
-          <div className="flex-1 min-w-0">
-            <div className="text-[15px] font-bold text-t1 mb-0.5">
-              {game.dev}
-            </div>
-            <div className="text-[11px] text-t1 font-medium mb-1 truncate">
-              {game.emoji} {game.title}
-            </div>
-            <span className="inline-flex font-mono text-[9px] tracking-wider uppercase text-t2 px-2 py-0.5 rounded bg-bg5 border border-white/10">
-              Desarrollador · {game.category}
-            </span>
-          </div>
+        <div className="text-[15px] font-bold text-t1 mb-0.5">
+          {game.dev}
         </div>
+        <div className="text-[11px] text-t1 font-medium mb-1 truncate">
+          {game.emoji} {game.title}
+        </div>
+        <span className="inline-flex font-mono text-[9px] tracking-wider uppercase text-t2 px-2 py-0.5 rounded bg-bg5 border border-white/10">
+          Desarrollador · {game.category}
+        </span>
       </div>
       <div className="p-5 flex flex-col gap-3 flex-1">
         <p className="text-[13px] text-t2 leading-relaxed">
