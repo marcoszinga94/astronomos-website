@@ -44,7 +44,7 @@ export default function TeamCard({ game, index }: Props) {
             <div className="text-[15px] font-bold text-t1 mb-0.5">
               {game.dev}
             </div>
-            <div className="text-[11px] text-a1 font-medium mb-1 truncate">
+            <div className="text-[11px] text-t1 font-medium mb-1 truncate">
               {game.emoji} {game.title}
             </div>
             <span className="inline-flex font-mono text-[9px] tracking-wider uppercase text-t2 px-2 py-0.5 rounded bg-bg5 border border-white/10">
