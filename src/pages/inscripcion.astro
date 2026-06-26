@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import SectionHeader from "../components/SectionHeader";
 import Section from "../components/ui/Section.astro";
+import Reveal from "../components/Reveal.astro";
 import Button from "../components/ui/Button.astro";
 import FeatureCard from "../components/ui/FeatureCard.astro";
 import BannerCard from "../components/ui/BannerCard.astro";
@@ -9,6 +10,7 @@ import BannerCard from "../components/ui/BannerCard.astro";
 
 <BaseLayout title="Inscripción — Conocé la escuela">
   <Section innerClass="max-w-280">
+    <Reveal>
     <div class="grid lg:grid-cols-2 gap-12 items-start">
       <div>
         <SectionHeader eyebrow="Tecnicatura Universitaria · UPC" title="Conocé la" highlight="escuela" subtitle="Formación universitaria presencial en La Carlota con título oficial de la Universidad Provincial de Córdoba." />
@@ -51,5 +53,6 @@ import BannerCard from "../components/ui/BannerCard.astro";
         </BannerCard>
       </div>
     </div>
+    </Reveal>
   </Section>
 </BaseLayout>

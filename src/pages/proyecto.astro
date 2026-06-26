@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import SectionHeader from "../components/SectionHeader";
 import Section from "../components/ui/Section.astro";
+import Reveal from "../components/Reveal.astro";
 import Button from "../components/ui/Button.astro";
 import Divider from "../components/ui/Divider.astro";
 import SectionEyebrow from "../components/ui/SectionEyebrow.astro";
@@ -21,6 +22,7 @@ import { estaciones, timeline } from "../data/proyecto";
       subtitle="Una experiencia educativa completa donde niños de primer grado se convierten en astrónomos por un día, guiados por estudiantes secundarios y universitarios a través de cinco estaciones temáticas."
     />
 
+    <Reveal>
     <BannerCard bg="bg-gradient-to-br from-a1/6 to-a3/3" border="border-a1/15">
       <p
         class="text-[clamp(14px,1.7vw,17px)] text-t2 leading-relaxed font-light"
@@ -46,9 +48,11 @@ import { estaciones, timeline } from "../data/proyecto";
         <a href="/equipo" class="text-a1 hover:text-white underline underline-offset-2 transition-colors">estudiantes</a> de la Tecnicatura en Programación Full Stack.
       </p>
     </BannerCard>
+    </Reveal>
 
     <div class="h-16"></div>
 
+    <Reveal>
     <div class="grid lg:grid-cols-2 gap-14 items-start">
       <div class="flex flex-col gap-6">
         <FeatureCard
@@ -107,6 +111,7 @@ import { estaciones, timeline } from "../data/proyecto";
         </div>
       </div>
     </div>
+    </Reveal>
 
     <div class="h-16"></div>
 
@@ -114,6 +119,7 @@ import { estaciones, timeline } from "../data/proyecto";
 
     <div class="h-12"></div>
 
+    <Reveal>
     <SectionEyebrow text="Proceso de desarrollo profesional" />
     <h2
       class="text-[clamp(24px,3.5vw,40px)] font-bold tracking-tight leading-tight text-t1 mb-3.5"
@@ -159,6 +165,7 @@ import { estaciones, timeline } from "../data/proyecto";
         ))
       }
     </div>
+    </Reveal>
 
     <div class="h-12"></div>
 

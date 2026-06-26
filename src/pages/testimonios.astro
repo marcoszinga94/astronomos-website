@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import SectionHeader from "../components/SectionHeader";
 import Section from "../components/ui/Section.astro";
+import Reveal from "../components/Reveal.astro";
 import SkillCard from "../components/ui/SkillCard.astro";
 import TestimonialCard from "../components/TestimonialCard";
 import { testimonials, competencias, salidasLaborales } from "../data/content";
@@ -11,13 +12,16 @@ import { testimonials, competencias, salidasLaborales } from "../data/content";
   <Section>
     <SectionHeader eyebrow="Voces del proyecto" title="Lo que dicen" highlight="los protagonistas" subtitle="Tres perspectivas que muestran el impacto real del proyecto: quienes aprendieron jugando, quienes programaron y quienes acompañaron el proceso." />
 
+    <Reveal>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       {testimonials.map((t) => (
         <TestimonialCard key={t.name} testimonial={t} />
       ))}
     </div>
+    </Reveal>
   </Section>
 
+  <Reveal>
   <Section bg="bg-bg2">
     <div class="grid lg:grid-cols-2 gap-14 items-center">
       <div>
@@ -51,4 +55,5 @@ import { testimonials, competencias, salidasLaborales } from "../data/content";
       </div>
     </div>
   </Section>
+  </Reveal>
 </BaseLayout>

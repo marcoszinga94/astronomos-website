@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import SectionHeader from "../components/SectionHeader";
 import Section from "../components/ui/Section.astro";
 import TeamCard from "../components/TeamCard";
+import Reveal from "../components/Reveal.astro";
 import { games } from "../data/games";
 ---
 
@@ -18,9 +19,11 @@ import { games } from "../data/games";
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       {
         games.map((game, i) => (
-          <div id={game.slug} key={game.slug} class="card-target">
-            <TeamCard game={game} index={i} />
-          </div>
+          <Reveal>
+            <div id={game.slug} key={game.slug} class="card-target">
+              <TeamCard game={game} index={i} />
+            </div>
+          </Reveal>
         ))
       }
     </div>

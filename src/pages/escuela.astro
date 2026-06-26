@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import SectionHeader from "../components/SectionHeader";
 import Section from "../components/ui/Section.astro";
+import Reveal from "../components/Reveal.astro";
 import Button from "../components/ui/Button.astro";
 import SectionEyebrow from "../components/ui/SectionEyebrow.astro";
 import BannerCard from "../components/ui/BannerCard.astro";
@@ -29,6 +30,7 @@ import {
 
     <div class="h-8"></div>
 
+    <Reveal>
     <div class="grid md:grid-cols-2 gap-4">
       <div
         class="bg-bg2 border border-white/5 rounded-xl p-6 flex flex-col gap-3.5 transition-all hover:border-a1/25 hover:-translate-y-0.5"
@@ -132,9 +134,11 @@ import {
         </p>
       </div>
     </div>
+    </Reveal>
 
     <div class="h-16"></div>
 
+    <Reveal>
     <SectionEyebrow text="Tecnicatura Universitaria · UPC" />
     <div class="h-6"></div>
 
@@ -184,9 +188,11 @@ import {
         </div>
       </div>
     </BannerCard>
+    </Reveal>
 
     <div class="h-16"></div>
 
+    <Reveal>
     <SectionEyebrow text="Plan de estudios" />
     <div class="h-6"></div>
     <div class="grid lg:grid-cols-3 gap-3.5">
@@ -201,9 +207,11 @@ import {
         ))
       }
     </div>
+    </Reveal>
 
     <div class="h-16"></div>
 
+    <Reveal>
     <SectionEyebrow text="Áreas de formación" />
     <div class="h-6"></div>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -220,6 +228,7 @@ import {
         ))
       }
     </div>
+    </Reveal>
 
     <div class="h-12"></div>
 
