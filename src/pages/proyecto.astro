@@ -8,7 +8,7 @@ import SectionEyebrow from "../components/ui/SectionEyebrow.astro";
 import FeatureCard from "../components/ui/FeatureCard.astro";
 import BannerCard from "../components/ui/BannerCard.astro";
 import Tag from "../components/ui/Tag.astro";
-import { estaciones, timeline } from "../data/proyecto";
+import { timeline } from "../data/proyecto";
 ---
 
 <BaseLayout title="El Proyecto — Astrónomos por un día">
@@ -24,35 +24,11 @@ import { estaciones, timeline } from "../data/proyecto";
       </p>
     </BannerCard>
 
-    <div class="grid lg:grid-cols-2 gap-14 items-start">
-      <div class="flex flex-col gap-6">
-        <FeatureCard icon="🎯" title="Objetivo del proyecto" text="Acercar la astronomía de manera lúdica, participativa y significativa, fortaleciendo la curiosidad científica, el trabajo colaborativo y la articulación entre niveles educativos: primario, secundario y superior." />
-        <FeatureCard icon="👶" title="Beneficiarios directos" text="Más de 100 niños y niñas de primer grado. Aprendizaje por descubrimiento guiado en un entorno seguro, lúdico y diseñado específicamente para su edad y nivel cognitivo." />
-        <FeatureCard icon="🤝" title="Metodología: aprendizaje entre pares" text="Estudiantes de nivel secundario y universitario guiaron a los más pequeños. Al enseñar, también aprendieron: comunicación, paciencia, liderazgo y responsabilidad pedagógica." />
-        <FeatureCard icon="💡" title="Articulación curricular" text="Integración de contenidos de Ciencias Naturales (astronomía de primer grado), Programación II y Práctica Profesionalizante I de la tecnicatura. Tres materias, un proyecto real." />
-      </div>
-
-      <div>
-        <div class="font-mono text-[9px] tracking-wider uppercase text-a1 mb-4">Las 5 estaciones temáticas</div>
-        <div class="flex flex-col gap-3.5">
-          {estaciones.map((est) => (
-            <div class={`bg-bg3 border border-white/5 rounded-xl p-5 grid grid-cols-[56px_1fr] gap-4 items-start transition-all hover:border-a1/20 hover:translate-x-1 ${est.featured ? 'border-a1/25 bg-a1/4' : ''}`}>
-              <div class="flex flex-col items-center gap-1">
-                <span class="text-[26px] leading-none">{est.icono}</span>
-                <span class="font-mono text-[8px] tracking-wider text-t3">{est.num}</span>
-              </div>
-              <div>
-                <div class="font-mono text-[9px] tracking-wider uppercase text-t3 mb-0.5">Estación {est.num}</div>
-                <h3 class="text-[15px] font-semibold text-t1 mb-1">{est.titulo}</h3>
-                <p class="text-[12px] text-t2 leading-relaxed">{est.texto}</p>
-                {est.badge && (
-                  <Tag variant="a1">{est.badge}</Tag>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+    <div class="flex flex-col gap-6 max-w-[760px]">
+      <FeatureCard icon="🎯" title="Objetivo del proyecto" text="Acercar la astronomía de manera lúdica, participativa y significativa, fortaleciendo la curiosidad científica, el trabajo colaborativo y la articulación entre niveles educativos: primario, secundario y superior." />
+      <FeatureCard icon="👶" title="Beneficiarios directos" text="Más de 100 niños y niñas de primer grado. Aprendizaje por descubrimiento guiado en un entorno seguro, lúdico y diseñado específicamente para su edad y nivel cognitivo." />
+      <FeatureCard icon="🤝" title="Metodología: aprendizaje entre pares" text="Estudiantes de nivel secundario y universitario guiaron a los más pequeños. Al enseñar, también aprendieron: comunicación, paciencia, liderazgo y responsabilidad pedagógica." />
+      <FeatureCard icon="💡" title="Articulación curricular" text="Integración de contenidos de Ciencias Naturales (astronomía de primer grado), Programación II y Práctica Profesionalizante I de la tecnicatura. Tres materias, un proyecto real." />
     </div>
 
     <Divider />
