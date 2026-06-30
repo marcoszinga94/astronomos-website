@@ -89,6 +89,7 @@ export const games: Game[] = sortGames([
       "Enseñar las constelaciones visibles desde Córdoba de forma lúdica e interactiva.",
     description:
       "Guiado por Lumina, una simpática estrella exploradora, conectá estrellas en el orden correcto para formar las 12 constelaciones del cielo cordobés. Datos curiosos incluidos.",
+    demoUrl: "/games/elcielocordobes.html",
     image: "el cielo cordobez.png",
     tags: ["Python", "Pygame"],
     gradient: "linear-gradient(135deg,#4fbb7c,#00c8ff)",
@@ -126,6 +127,7 @@ export const games: Game[] = sortGames([
       "Desarrollar la memoria visual y el reconocimiento de astros del Sistema Solar.",
     description:
       "Juego de memoria clásico ambientado en el espacio exterior. Encontrá todos los pares de cartas de planetas y astros antes de cometer demasiados errores. Con peligros espaciales sorpresa.",
+    demoUrl: "/games/cartasespaciales.html",
     image: "cartas espaciales.png",
     tags: ["Python", "Pygame"],
     gradient: "linear-gradient(135deg,#ff9f43,#ff6b6b)",
