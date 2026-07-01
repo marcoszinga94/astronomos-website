@@ -47,6 +47,7 @@ export const games: Game[] = sortGames([
     dev: "Ulises Sosa",
     initials: "US",
     slug: "arcspace",
+    demoUrl: "https://arcspace-web.vercel.app/",
     category: "Exploración",
     weeks: "~3 sem.",
     objective:
