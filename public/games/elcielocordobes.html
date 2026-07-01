@@ -224,104 +224,72 @@ const DATOS_ASTRONOMICOS = [
     }
   },
   {
-    // Can Mayor: 7 estrellas formando un perro.
-    // Sirio (0): pecho brillante centro-izquierda.
-    // Mirzan (1): cabeza, ARRIBA de Sirio (casi mismo rx, ry menor).
-    // Adhara (2): pata delantera izquierda, abajo-izq de Sirio.
-    // Wezen (3): lomo, derecha de Sirio a misma altura.
-    // Aludra (4): hombro/espalda, arriba-der de Wezen.
-    // Furud (5): pata trasera derecha, abajo de Wezen.
-    // Omicron1 (6): cola, derecha de Aludra.
-    // Conexiones: cabeza-Sirio, Sirio-pata izq, Sirio-lomo, lomo-hombro,
-    //             hombro-cola, lomo-pata trasera, cola-pata trasera.
+    // Can Mayor: 7 estrellas formando un perro, coordenadas digitalizadas
+    // directamente de la ilustración de referencia (imagen "CONSTELACIONES").
+    // Sirio (0): pecho, la estrella más brillante, arriba-izquierda.
+    // Mirzan (1): nodo del triángulo central, a la derecha de Sirio.
+    // Wezen (2) y Aludra (3): cadena que sigue hacia la derecha (cabeza/cola).
+    // Adhara (4): nodo inferior del triángulo (debajo de Mirzan).
+    // Furud (5) y Omicron1 (6): pata inferior que baja desde Adhara.
+    // El triángulo central lo forman Sirio-Mirzan-Adhara.
     nombre: "Can Mayor", color: [255,220,80],
     estrellas: [
-      // Referencia: forma de perro mirando a la derecha
-      // Sirio (0): estrella brillante, centro-izquierda del panel
-      // Mirzan (1): cabeza, arriba y ligeramente derecha de Sirio
-      // Adhara (2): pata delantera izquierda, abajo-izquierda de Sirio
-      // Wezen (3): lomo, derecha de Sirio, ligeramente más abajo
-      // Aludra (4): trasero/popa, debajo-derecha de Wezen
-      // Furud (5): pata trasera, debajo de Wezen, entre Wezen y Aludra
-      // Omicron1 (6): cola, extremo derecho arriba de Aludra
-      {n:"Sirio",    rx:0.3400, ry:0.3600, mag:-1.46},
-      {n:"Mirzan",   rx:0.3700, ry:0.2500, mag:1.98},
-      {n:"Adhara",   rx:0.2500, ry:0.5000, mag:1.50},
-      {n:"Wezen",    rx:0.5300, ry:0.4200, mag:1.83},
-      {n:"Aludra",   rx:0.5900, ry:0.5600, mag:2.45},
-      {n:"Furud",    rx:0.4700, ry:0.5700, mag:3.02},
-      {n:"Omicron1", rx:0.6800, ry:0.3800, mag:3.87},
+      {n:"Sirio",    rx:0.3590, ry:0.2700, mag:-1.46},
+      {n:"Mirzan",   rx:0.4836, ry:0.3425, mag:1.98},
+      {n:"Wezen",    rx:0.5545, ry:0.3218, mag:1.83},
+      {n:"Aludra",   rx:0.6411, ry:0.4113, mag:2.45},
+      {n:"Adhara",   rx:0.4543, ry:0.4678, mag:1.50},
+      {n:"Furud",    rx:0.5100, ry:0.6385, mag:3.02},
+      {n:"Omicron1", rx:0.5922, ry:0.7000, mag:3.87},
     ],
-    lines: [[1,0],[0,2],[0,3],[3,4],[4,6],[3,5],[6,5]],
+    lines: [[0,1],[0,4],[1,4],[1,2],[2,3],[4,5],[5,6]],
     ficha: {
       historia: "Can Mayor representa un gran perro que acompania al cazador Orion. Se dice que Orion lo lleva con el para cazar en el cielo.",
       datos: "Aqui se encuentra Sirio, la estrella mas brillante de todo el cielo nocturno. Se puede ver facilmente desde Cordoba en verano.",
     }
   },
   {
-    // Tauro: 9 estrellas. Cadena principal diagonal ~40° (Aldebarán SW → Elnath NE),
-    // con 7 estrellas en línea casi recta + 1 brazo corto que sale del nodo central
-    // (Ain, estrella 4) hacia arriba-izquierda (Alcione, las Pléyades).
-    // Aldebarán es la estrella más brillante (naranja), en el extremo SW.
-    // Elnath es brillante en el extremo NE.
+    // Tauro: 9 estrellas, coordenadas digitalizadas de la ilustración de
+    // referencia. Forma real: una V marcada (dos ramas cortas que convergen
+    // en Aldebaran, la estrella naranja más brillante) seguida de una
+    // diagonal larga que se extiende hasta Elnath.
+    // Rama 1 (arriba-izq): E1(0)-E2(1) hasta Aldebaran.
+    // Rama 2 (izq): Alcione(2)-E3(3) hasta Aldebaran.
+    // Aldebaran (4): vértice de la V, la estrella más brillante (naranja).
+    // Diagonal larga de salida: Ain(5)-E5(6)-E6(7)-Elnath(8).
     nombre: "Tauro", color: [255,140,60],
     estrellas: [
-      // Referencia: cadena diagonal de SW (Aldebarán abajo-izq) a NE (Elnath arriba-der)
-      // con bifurcación: una rama sigue recto a Elnath, la otra va hacia Alcione (abajo-izq de Ain)
-      // La cadena tiene ~7 estrellas en línea casi recta, con ligeras curvas
-      // Aldebarán (0): extremo SW, abajo-izquierda, estrella naranja brillante
-      // E1 (1): segunda desde abajo-izq
-      // E2 (2): tercera
-      // E3 (3): cuarta, zona central
-      // Ain (4): nodo de bifurcación, centro-der
-      // E5 (5): rama principal continúa hacia arriba-der
-      // E6 (6): sigue hacia arriba-der
-      // Elnath (7): extremo NE, arriba-derecha
-      // Alcione (8): rama corta desde Ain, hacia izq-abajo (Pléyades, "V" del toro)
-      {n:"Aldebaran", rx:0.2200, ry:0.6800, mag:0.85},
-      {n:"E1",        rx:0.2900, ry:0.5900, mag:2.50},
-      {n:"E2",        rx:0.3500, ry:0.5200, mag:2.80},
-      {n:"E3",        rx:0.4000, ry:0.4600, mag:3.20},
-      {n:"Ain",       rx:0.4600, ry:0.4000, mag:3.53},
-      {n:"E5",        rx:0.5300, ry:0.3400, mag:2.80},
-      {n:"E6",        rx:0.5900, ry:0.2900, mag:3.00},
-      {n:"Elnath",    rx:0.6700, ry:0.2200, mag:1.65},
-      {n:"Alcione",   rx:0.3900, ry:0.3400, mag:2.87},
+      {n:"E1",        rx:0.2801, ry:0.2763, mag:2.50},
+      {n:"E2",        rx:0.3943, ry:0.3267, mag:2.80},
+      {n:"Alcione",   rx:0.3391, ry:0.4454, mag:2.87},
+      {n:"E3",        rx:0.4568, ry:0.5099, mag:3.20},
+      {n:"Aldebaran", rx:0.4970, ry:0.4785, mag:0.85},
+      {n:"Ain",       rx:0.5125, ry:0.5401, mag:3.53},
+      {n:"E5",        rx:0.5470, ry:0.5896, mag:2.80},
+      {n:"E6",        rx:0.6255, ry:0.6564, mag:3.00},
+      {n:"Elnath",    rx:0.6609, ry:0.6999, mag:1.65},
     ],
-    lines: [[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[4,8]],
+    lines: [[0,1],[1,4],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8]],
     ficha: {
       historia: "Tauro es el toro del cielo. Sus estrellas forman una larga cadena diagonal con un brazo corto que apunta a las Pleyades.",
       datos: "En Tauro vive el famoso grupo de estrellas llamado las Pleyades, que muchas culturas del mundo usaron para marcar las estaciones del anio.",
     }
   },
   {
-    // Eridanus: 8 estrellas formando un río muy sinuoso.
-    // Cursa (0): inicio NE (arriba-der).
-    // Cadena: 0→1 baja hacia izq, 1→2 sube hacia der (primera curva),
-    //         2→3 baja hacia izq, 3→4 continúa izq, 4→5 baja izq,
-    //         5→6 sube hacia der (segunda curva), 6→7 baja hacia izq.
-    // Achernar (7): fin sur, brillante.
-    // Los cambios de dirección crean el zigzag característico del río.
+    // Eridanus: 8 estrellas, coordenadas digitalizadas de la ilustración de
+    // referencia. Río sinuoso: baja desde Cursa, forma un primer valle
+    // (Zaurak-E2), sube a un pico (Rana), desciende y termina en un zigzag
+    // final (Angetenar-Theemin-Acamar) antes de llegar a Achernar.
     nombre: "Eridanus", color: [80,200,220],
     estrellas: [
-      // Referencia: río muy sinuoso con múltiples zigzags
-      // Cursa (0): inicio arriba-derecha
-      // Cadena sinuosa bajando hacia la izquierda con curvas:
-      // 0→1: baja hacia izq-abajo
-      // 1→2: sube hacia der (primera curva)
-      // 2→3: baja hacia izq
-      // 3→4: continúa hacia izq-abajo
-      // 4→5: baja izq (segunda curva)
-      // 5→6: sube hacia der
-      // 6→7: baja hacia izq, Achernar abajo-izquierda (estrella más brillante)
-      {n:"Cursa",     rx:0.6500, ry:0.2500, mag:2.79},
-      {n:"Zaurak",    rx:0.5500, ry:0.3300, mag:2.95},
-      {n:"E2",        rx:0.6200, ry:0.4200, mag:3.20},
-      {n:"Rana",      rx:0.5000, ry:0.4700, mag:3.54},
-      {n:"Angetenar", rx:0.3800, ry:0.4500, mag:3.56},
-      {n:"Theemin",   rx:0.3100, ry:0.5500, mag:3.55},
-      {n:"Acamar",    rx:0.4300, ry:0.6200, mag:2.88},
-      {n:"Achernar",  rx:0.3000, ry:0.7200, mag:0.46},
+      {n:"Cursa",     rx:0.2801, ry:0.2763, mag:2.79},
+      {n:"Zaurak",    rx:0.4205, ry:0.5014, mag:2.95},
+      {n:"E2",        rx:0.4775, ry:0.5097, mag:3.20},
+      {n:"Rana",      rx:0.6148, ry:0.3256, mag:3.54},
+      {n:"Angetenar", rx:0.6446, ry:0.4006, mag:3.56},
+      {n:"Theemin",   rx:0.6740, ry:0.5761, mag:3.55},
+      {n:"Acamar",    rx:0.7200, ry:0.5629, mag:2.88},
+      {n:"Achernar",  rx:0.7187, ry:0.6938, mag:0.46},
     ],
     lines: [[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]],
     ficha: {
@@ -330,35 +298,27 @@ const DATOS_ASTRONOMICOS = [
     }
   },
   {
-    // Grus: 8 estrellas. Cuello casi vertical (Alnair→Al Dhanab→Delta→Mu),
-    // con las 4 estrellas del cuello en línea casi recta ligeramente inclinada (~100°).
-    // Ala izquierda: sale desde Al Dhanab (1) hacia Zeta Gru (4) a la izquierda.
-    // Ala derecha: sale desde Al Dhanab (1) hacia Pi Gru (5) y Iota Gru (6) a la derecha.
-    // Pata: debajo de Alnair (0).
+    // Grus: 8 estrellas, coordenadas digitalizadas de la ilustración de
+    // referencia. Estructura de grulla volando:
+    // Zeta Gru (0): punta del ala izquierda.
+    // Al Dhanab (1): nodo central (une ala izquierda, cuerpo y cuello).
+    // Alnair (2): cuerpo/pecho, la estrella más brillante (naranja).
+    // Delta Gru (3): cuello, nodo central que reparte hacia el ala derecha y la cadera.
+    // Mu Gru (4): punta del ala derecha.
+    // Iota Gru (5): cadera, de donde bajan las dos patas.
+    // Pata (6) y Pi Gru (7): las dos patas, bifurcadas desde la cadera.
     nombre: "Grus", color: [150,255,180],
     estrellas: [
-      // Referencia: grulla volando
-      // El cuerpo/cuello corre de abajo (Alnair) hacia arriba (Mu Gru = pico)
-      // ligeramente inclinado. Alas extendiéndose a izquierda y derecha desde Al Dhanab.
-      // Pata/cola sale debajo de Alnair.
-      // Alnair (0): cuerpo central-bajo, estrella brillante
-      // Al Dhanab (1): cuerpo centro, nodo de las alas
-      // Delta Gru (2): cuerpo arriba-centro
-      // Mu Gru (3): cabeza/pico, extremo superior
-      // Zeta Gru (4): ala izquierda, sale de Al Dhanab hacia izq
-      // Pi Gru (5): ala derecha, sale de Al Dhanab hacia der-abajo
-      // Iota Gru (6): extremo ala derecha, más derecha que Pi Gru
-      // Pata (7): debajo de Alnair
-      {n:"Alnair",    rx:0.4900, ry:0.5800, mag:1.74},
-      {n:"Al Dhanab", rx:0.4500, ry:0.4300, mag:2.07},
-      {n:"Delta Gru", rx:0.4100, ry:0.3300, mag:3.01},
-      {n:"Mu Gru",    rx:0.3600, ry:0.2500, mag:3.97},
-      {n:"Zeta Gru",  rx:0.2800, ry:0.4700, mag:4.12},
-      {n:"Pi Gru",    rx:0.5800, ry:0.3600, mag:3.80},
-      {n:"Iota Gru",  rx:0.6700, ry:0.4400, mag:3.90},
-      {n:"Pata",      rx:0.5200, ry:0.7000, mag:4.50},
+      {n:"Zeta Gru",  rx:0.3630, ry:0.2700, mag:4.12},
+      {n:"Al Dhanab", rx:0.4492, ry:0.3714, mag:2.07},
+      {n:"Alnair",    rx:0.4637, ry:0.4318, mag:1.74},
+      {n:"Delta Gru", rx:0.5235, ry:0.4438, mag:3.01},
+      {n:"Mu Gru",    rx:0.6371, ry:0.3043, mag:3.97},
+      {n:"Iota Gru",  rx:0.5655, ry:0.5233, mag:3.90},
+      {n:"Pata",      rx:0.5947, ry:0.7000, mag:4.50},
+      {n:"Pi Gru",    rx:0.6168, ry:0.6389, mag:3.80},
     ],
-    lines: [[7,0],[0,1],[1,2],[2,3],[1,4],[1,5],[5,6]],
+    lines: [[0,1],[1,2],[1,3],[3,4],[3,5],[5,6],[5,7]],
     ficha: {
       historia: "Grus representa una elegante grulla volando por el cielo del sur. Esta ave es conocida por su vuelo largo y gracioso.",
       datos: "Su nombre significa grulla en latin. Se puede ver muy bien desde Cordoba en otoño e invierno, cerca de la constelacion del Pez Austral.",
@@ -1353,7 +1313,7 @@ class Game {
       }
     } else {
       ctx.fillStyle='rgba(70,90,140,0.8)'; ctx.textAlign='left';
-      ctx.fillText('Escri\u00b4 tu nombre...', ix+padL, iy+ih*0.62);
+      ctx.fillText('Escribir tu nombre...', ix+padL, iy+ih*0.62);
       if (Math.floor(t*2)%2===0) {
         ctx.fillStyle='rgba(100,150,220,0.9)';
         ctx.fillRect(ix+padL-2, iy+ih*0.2, 2, ih*0.6);
